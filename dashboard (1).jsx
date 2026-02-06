@@ -1,0 +1,287 @@
+import { useState, useMemo } from "react";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
+
+const RAW = {"months":["2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"reps":["Abby Howerton","Andy Coon","Bobbi Marshall","Dale  Becker","Devin Friebe","Eric Arnold","Jeremiah Wagenman","Jimmy Latter","Lamar Helm","Lori  Moore","Merlin Gleed"],"repSummary":{"Abby Howerton":{"total_gross":44826.0,"total_credits":-5940.0,"total_net":38886.0,"total_txns":65,"total_invoices":51,"unique_customers":20,"active_months":13,"first_month":"2024-12","last_month":"2026-02","avg_monthly_gross":3448.15,"avg_monthly_net":2991.23},"Andy Coon":{"total_gross":616558.75,"total_credits":-69457.55,"total_net":547101.2,"total_txns":807,"total_invoices":618,"unique_customers":262,"active_months":18,"first_month":"2024-09","last_month":"2026-02","avg_monthly_gross":34253.26,"avg_monthly_net":30394.51},"Bobbi Marshall":{"total_gross":279087.1,"total_credits":-67950.51,"total_net":211136.59,"total_txns":372,"total_invoices":246,"unique_customers":112,"active_months":20,"first_month":"2024-04","last_month":"2026-02","avg_monthly_gross":13954.35,"avg_monthly_net":10556.83},"Dale  Becker":{"total_gross":18135.7,"total_credits":-2092.65,"total_net":16043.05,"total_txns":31,"total_invoices":20,"unique_customers":7,"active_months":8,"first_month":"2025-05","last_month":"2026-01","avg_monthly_gross":2266.96,"avg_monthly_net":2005.38},"Devin Friebe":{"total_gross":125920.7,"total_credits":-2030.7,"total_net":123890.0,"total_txns":91,"total_invoices":86,"unique_customers":55,"active_months":9,"first_month":"2025-05","last_month":"2026-01","avg_monthly_gross":13991.19,"avg_monthly_net":13765.56},"Eric Arnold":{"total_gross":154759.1,"total_credits":-6960.9,"total_net":147798.2,"total_txns":130,"total_invoices":107,"unique_customers":81,"active_months":13,"first_month":"2024-07","last_month":"2026-02","avg_monthly_gross":11904.55,"avg_monthly_net":11369.09},"Jeremiah Wagenman":{"total_gross":20031.2,"total_credits":-908.0,"total_net":19123.2,"total_txns":13,"total_invoices":12,"unique_customers":12,"active_months":2,"first_month":"2026-01","last_month":"2026-02","avg_monthly_gross":10015.6,"avg_monthly_net":9561.6},"Jimmy Latter":{"total_gross":2976.0,"total_credits":0,"total_net":2976.0,"total_txns":3,"total_invoices":3,"unique_customers":3,"active_months":1,"first_month":"2026-01","last_month":"2026-01","avg_monthly_gross":2976.0,"avg_monthly_net":2976.0},"Lamar Helm":{"total_gross":642556.4,"total_credits":-39958.8,"total_net":602597.6,"total_txns":660,"total_invoices":560,"unique_customers":189,"active_months":18,"first_month":"2024-06","last_month":"2026-02","avg_monthly_gross":35697.58,"avg_monthly_net":33477.64},"Lori  Moore":{"total_gross":7392.0,"total_credits":0,"total_net":7392.0,"total_txns":3,"total_invoices":3,"unique_customers":3,"active_months":1,"first_month":"2025-12","last_month":"2025-12","avg_monthly_gross":7392.0,"avg_monthly_net":7392.0},"Merlin Gleed":{"total_gross":166413.7,"total_credits":-18226.5,"total_net":148187.2,"total_txns":265,"total_invoices":218,"unique_customers":99,"active_months":15,"first_month":"2024-10","last_month":"2026-01","avg_monthly_gross":11094.25,"avg_monthly_net":9879.15}},"d":{"Abby Howerton":{"2024-12":{"g":0,"c":-840.0,"n":-840.0,"t":1,"i":0,"cm":1,"cu":1},"2025-02":{"g":462.0,"c":0,"n":462.0,"t":1,"i":1,"cm":0,"cu":1},"2025-03":{"g":1596.0,"c":0,"n":1596.0,"t":2,"i":2,"cm":0,"cu":2},"2025-04":{"g":2064.0,"c":0,"n":2064.0,"t":4,"i":4,"cm":0,"cu":4},"2025-05":{"g":7008.0,"c":-2208.0,"n":4800.0,"t":13,"i":7,"cm":6,"cu":9},"2025-07":{"g":1152.0,"c":-96.0,"n":1056.0,"t":3,"i":2,"cm":1,"cu":2},"2025-08":{"g":3072.0,"c":0,"n":3072.0,"t":4,"i":4,"cm":0,"cu":3},"2025-09":{"g":1440.0,"c":-1056.0,"n":384.0,"t":2,"i":1,"cm":1,"cu":2},"2025-10":{"g":2232.0,"c":0,"n":2232.0,"t":2,"i":2,"cm":0,"cu":2},"2025-11":{"g":8448.0,"c":-132.0,"n":8316.0,"t":9,"i":8,"cm":1,"cu":7},"2025-12":{"g":9108.0,"c":0,"n":9108.0,"t":11,"i":11,"cm":0,"cu":11},"2026-01":{"g":8244.0,"c":-1344.0,"n":6900.0,"t":12,"i":9,"cm":3,"cu":8},"2026-02":{"g":0,"c":-264.0,"n":-264.0,"t":1,"i":0,"cm":1,"cu":1}},"Andy Coon":{"2024-09":{"g":1596.0,"c":0,"n":1596.0,"t":2,"i":2,"cm":0,"cu":2},"2024-10":{"g":3192.0,"c":-399.0,"n":2793.0,"t":7,"i":5,"cm":2,"cu":5},"2024-11":{"g":1554.0,"c":-304.5,"n":1249.5,"t":8,"i":4,"cm":4,"cu":6},"2024-12":{"g":4326.0,"c":-598.5,"n":3727.5,"t":16,"i":9,"cm":7,"cu":13},"2025-01":{"g":924.0,"c":-504.0,"n":420.0,"t":3,"i":2,"cm":1,"cu":3},"2025-02":{"g":20118.0,"c":-252.0,"n":19866.0,"t":14,"i":11,"cm":2,"cu":12},"2025-03":{"g":124989.0,"c":-1386.0,"n":123603.0,"t":76,"i":66,"cm":8,"cu":67},"2025-04":{"g":83138.8,"c":-11361.0,"n":71777.8,"t":77,"i":50,"cm":27,"cu":54},"2025-05":{"g":30027.2,"c":-4252.5,"n":25774.7,"t":43,"i":35,"cm":8,"cu":39},"2025-06":{"g":26762.0,"c":-3901.8,"n":22860.2,"t":48,"i":36,"cm":12,"cu":35},"2025-07":{"g":36384.0,"c":-3844.2,"n":32539.8,"t":67,"i":52,"cm":15,"cu":37},"2025-08":{"g":46775.4,"c":-5086.5,"n":41688.9,"t":82,"i":63,"cm":18,"cu":51},"2025-09":{"g":52462.7,"c":-4793.6,"n":47669.1,"t":58,"i":51,"cm":7,"cu":47},"2025-10":{"g":52448.0,"c":-7918.25,"n":44529.75,"t":86,"i":63,"cm":23,"cu":68},"2025-11":{"g":49539.95,"c":-7252.75,"n":42287.2,"t":83,"i":66,"cm":17,"cu":67},"2025-12":{"g":39653.6,"c":-6391.5,"n":33262.1,"t":62,"i":54,"cm":8,"cu":53},"2026-01":{"g":26960.5,"c":-6974.75,"n":19985.75,"t":55,"i":35,"cm":20,"cu":38},"2026-02":{"g":15707.6,"c":-4236.7,"n":11470.9,"t":20,"i":14,"cm":6,"cu":17}},"Bobbi Marshall":{"2024-04":{"g":0,"c":0,"n":0,"t":1,"i":0,"cm":0,"cu":1},"2024-05":{"g":3549.0,"c":-1365.0,"n":2184.0,"t":3,"i":2,"cm":1,"cu":2},"2024-08":{"g":798.0,"c":0,"n":798.0,"t":1,"i":1,"cm":0,"cu":1},"2024-10":{"g":1512.0,"c":0,"n":1512.0,"t":2,"i":2,"cm":0,"cu":2},"2024-11":{"g":756.0,"c":-2740.71,"n":-1984.71,"t":5,"i":1,"cm":4,"cu":4},"2024-12":{"g":0,"c":-168.0,"n":-168.0,"t":2,"i":0,"cm":1,"cu":2},"2025-01":{"g":504.0,"c":-252.0,"n":252.0,"t":4,"i":1,"cm":1,"cu":4},"2025-02":{"g":3759.0,"c":-189.0,"n":3570.0,"t":4,"i":2,"cm":1,"cu":4},"2025-03":{"g":9468.0,"c":-808.5,"n":8659.5,"t":10,"i":8,"cm":2,"cu":9},"2025-04":{"g":35216.0,"c":-9345.0,"n":25871.0,"t":40,"i":26,"cm":14,"cu":31},"2025-05":{"g":14184.0,"c":-2826.05,"n":11357.95,"t":22,"i":13,"cm":9,"cu":15},"2025-06":{"g":49146.0,"c":-14579.3,"n":34566.7,"t":60,"i":39,"cm":21,"cu":36},"2025-07":{"g":27764.0,"c":-8151.7,"n":19612.3,"t":38,"i":25,"cm":13,"cu":26},"2025-08":{"g":34223.4,"c":-11876.05,"n":22347.35,"t":36,"i":20,"cm":16,"cu":23},"2025-09":{"g":44975.7,"c":-7562.35,"n":37413.35,"t":50,"i":34,"cm":16,"cu":35},"2025-10":{"g":9148.8,"c":-920.0,"n":8228.8,"t":15,"i":11,"cm":4,"cu":13},"2025-11":{"g":12458.1,"c":-1955.65,"n":10502.45,"t":23,"i":19,"cm":4,"cu":20},"2025-12":{"g":10153.9,"c":-2573.5,"n":7580.4,"t":22,"i":16,"cm":6,"cu":19},"2026-01":{"g":20031.2,"c":-2637.7,"n":17393.5,"t":33,"i":25,"cm":8,"cu":22},"2026-02":{"g":1440.0,"c":0,"n":1440.0,"t":1,"i":1,"cm":0,"cu":1}},"Dale  Becker":{"2025-05":{"g":2360.8,"c":0,"n":2360.8,"t":1,"i":1,"cm":0,"cu":1},"2025-06":{"g":5084.8,"c":0,"n":5084.8,"t":3,"i":3,"cm":0,"cu":3},"2025-07":{"g":2638.4,"c":-442.65,"n":2195.75,"t":6,"i":4,"cm":2,"cu":4},"2025-08":{"g":1056.0,"c":-181.6,"n":874.4,"t":3,"i":1,"cm":2,"cu":3},"2025-09":{"g":1248.0,"c":-96.0,"n":1152.0,"t":4,"i":2,"cm":2,"cu":2},"2025-10":{"g":1945.1,"c":-1372.4,"n":572.7,"t":10,"i":5,"cm":5,"cu":5},"2025-11":{"g":2576.8,"c":0,"n":2576.8,"t":2,"i":2,"cm":0,"cu":2},"2026-01":{"g":1225.8,"c":0,"n":1225.8,"t":2,"i":2,"cm":0,"cu":2}},"Devin Friebe":{"2025-05":{"g":25268.8,"c":0,"n":25268.8,"t":13,"i":13,"cm":0,"cu":13},"2025-06":{"g":48548.0,"c":0,"n":48548.0,"t":29,"i":29,"cm":0,"cu":25},"2025-07":{"g":8340.8,"c":-79.45,"n":8261.35,"t":12,"i":11,"cm":1,"cu":12},"2025-08":{"g":1440.0,"c":-96.0,"n":1344.0,"t":2,"i":1,"cm":1,"cu":1},"2025-09":{"g":9988.0,"c":-96.0,"n":9892.0,"t":8,"i":7,"cm":1,"cu":8},"2025-10":{"g":2479.0,"c":0,"n":2479.0,"t":2,"i":2,"cm":0,"cu":2},"2025-11":{"g":4244.9,"c":0,"n":4244.9,"t":3,"i":3,"cm":0,"cu":3},"2025-12":{"g":15560.8,"c":-839.9,"n":14720.9,"t":13,"i":12,"cm":1,"cu":13},"2026-01":{"g":10050.4,"c":-919.35,"n":9131.05,"t":9,"i":8,"cm":1,"cu":9}},"Eric Arnold":{"2024-07":{"g":1260.0,"c":0,"n":1260.0,"t":1,"i":1,"cm":0,"cu":1},"2024-08":{"g":0,"c":0,"n":0,"t":1,"i":0,"cm":0,"cu":1},"2025-03":{"g":0,"c":0,"n":0,"t":1,"i":0,"cm":0,"cu":1},"2025-04":{"g":1536.0,"c":0,"n":1536.0,"t":1,"i":1,"cm":0,"cu":1},"2025-05":{"g":192.0,"c":0,"n":192.0,"t":1,"i":1,"cm":0,"cu":1},"2025-06":{"g":489.6,"c":0,"n":489.6,"t":1,"i":1,"cm":0,"cu":1},"2025-08":{"g":2360.8,"c":0,"n":2360.8,"t":1,"i":1,"cm":0,"cu":1},"2025-09":{"g":12161.5,"c":0,"n":12161.5,"t":7,"i":7,"cm":0,"cu":7},"2025-10":{"g":48948.3,"c":-554.25,"n":48394.05,"t":33,"i":30,"cm":3,"cu":24},"2025-11":{"g":18031.6,"c":-249.7,"n":17781.9,"t":15,"i":12,"cm":3,"cu":14},"2025-12":{"g":39374.7,"c":-2348.7,"n":37026.0,"t":38,"i":31,"cm":7,"cu":29},"2026-01":{"g":26679.8,"c":-3520.25,"n":23159.55,"t":27,"i":20,"cm":7,"cu":20},"2026-02":{"g":3724.8,"c":-288.0,"n":3436.8,"t":3,"i":2,"cm":1,"cu":3}},"Jeremiah Wagenman":{"2026-01":{"g":8470.8,"c":0,"n":8470.8,"t":5,"i":5,"cm":0,"cu":5},"2026-02":{"g":11560.4,"c":-908.0,"n":10652.4,"t":8,"i":7,"cm":1,"cu":7}},"Jimmy Latter":{"2026-01":{"g":2976.0,"c":0,"n":2976.0,"t":3,"i":3,"cm":0,"cu":3}},"Lamar Helm":{"2024-06":{"g":588.0,"c":0,"n":588.0,"t":1,"i":1,"cm":0,"cu":1},"2024-10":{"g":2205.0,"c":0,"n":2205.0,"t":2,"i":2,"cm":0,"cu":2},"2024-11":{"g":609.0,"c":-2152.5,"n":-1543.5,"t":7,"i":2,"cm":5,"cu":7},"2024-12":{"g":819.0,"c":0,"n":819.0,"t":1,"i":1,"cm":0,"cu":1},"2025-01":{"g":1491.0,"c":-52.5,"n":1438.5,"t":4,"i":2,"cm":1,"cu":3},"2025-02":{"g":0,"c":-661.5,"n":-661.5,"t":2,"i":0,"cm":1,"cu":2},"2025-03":{"g":7287.0,"c":0,"n":7287.0,"t":5,"i":5,"cm":0,"cu":4},"2025-04":{"g":89880.0,"c":-1974.0,"n":87906.0,"t":65,"i":60,"cm":5,"cu":59},"2025-05":{"g":97629.2,"c":-1963.5,"n":95665.7,"t":64,"i":58,"cm":6,"cu":57},"2025-06":{"g":65772.0,"c":-3701.5,"n":62070.5,"t":65,"i":51,"cm":14,"cu":52},"2025-07":{"g":100848.0,"c":-8878.5,"n":91969.5,"t":99,"i":80,"cm":19,"cu":74},"2025-08":{"g":56371.4,"c":-4279.5,"n":52091.9,"t":55,"i":43,"cm":12,"cu":43},"2025-09":{"g":59010.4,"c":-4272.0,"n":54738.4,"t":64,"i":52,"cm":12,"cu":50},"2025-10":{"g":28704.0,"c":-3384.0,"n":25320.0,"t":44,"i":38,"cm":6,"cu":34},"2025-11":{"g":50688.0,"c":-5184.0,"n":45504.0,"t":78,"i":68,"cm":10,"cu":63},"2025-12":{"g":43614.0,"c":-1848.0,"n":41766.0,"t":55,"i":53,"cm":2,"cu":51},"2026-01":{"g":34916.4,"c":-1607.3,"n":33309.1,"t":44,"i":39,"cm":5,"cu":37},"2026-02":{"g":2124.0,"c":0,"n":2124.0,"t":5,"i":5,"cm":0,"cu":5}},"Lori  Moore":{"2025-12":{"g":7392.0,"c":0,"n":7392.0,"t":3,"i":3,"cm":0,"cu":3}},"Merlin Gleed":{"2024-10":{"g":693.0,"c":0,"n":693.0,"t":1,"i":1,"cm":0,"cu":1},"2024-11":{"g":1029.0,"c":-399.0,"n":630.0,"t":2,"i":1,"cm":1,"cu":2},"2024-12":{"g":924.0,"c":0,"n":924.0,"t":1,"i":1,"cm":0,"cu":1},"2025-01":{"g":84.0,"c":0,"n":84.0,"t":1,"i":1,"cm":0,"cu":1},"2025-03":{"g":4578.0,"c":-199.5,"n":4378.5,"t":10,"i":8,"cm":2,"cu":9},"2025-04":{"g":7008.0,"c":-204.0,"n":6804.0,"t":7,"i":6,"cm":1,"cu":6},"2025-05":{"g":13152.0,"c":-535.5,"n":12616.5,"t":13,"i":12,"cm":1,"cu":13},"2025-06":{"g":27264.0,"c":-756.0,"n":26508.0,"t":29,"i":28,"cm":1,"cu":28},"2025-07":{"g":15084.0,"c":-1251.0,"n":13833.0,"t":21,"i":17,"cm":4,"cu":14},"2025-08":{"g":18432.0,"c":-2832.0,"n":15600.0,"t":30,"i":23,"cm":7,"cu":23},"2025-09":{"g":19056.0,"c":-3469.5,"n":15586.5,"t":34,"i":24,"cm":10,"cu":22},"2025-10":{"g":18168.0,"c":-4056.0,"n":14112.0,"t":39,"i":27,"cm":12,"cu":31},"2025-11":{"g":12984.0,"c":-1104.0,"n":11880.0,"t":18,"i":16,"cm":2,"cu":16},"2025-12":{"g":18047.3,"c":-2628.0,"n":15419.3,"t":36,"i":33,"cm":3,"cu":34},"2026-01":{"g":9910.4,"c":-792.0,"n":9118.4,"t":23,"i":20,"cm":3,"cu":20}}}};
+
+const f = (n) => n == null || n === 0 ? "\u2014" : (n < 0 ? "(" : "") + "$" + Math.abs(n).toLocaleString("en-US", { maximumFractionDigits: 0 }) + (n < 0 ? ")" : "");
+const p = (n) => n == null ? "\u2014" : n.toFixed(1) + "%";
+const mo = (m) => { const [y,mn] = m.split("-"); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+mn-1] + " \u2019" + y.slice(2); };
+const get = (rep, month) => RAW.d[rep]?.[month] || { g:0, c:0, n:0, t:0, i:0, cm:0, cu:0 };
+
+const PALETTE = ["#1e3a5f","#8c4a2a","#2d5a3d","#5c3d6e","#8c6e20","#1a5c5c","#8a3333","#4a5e1e","#3a4e7a","#6e4a5e","#2a4a2a"];
+const repColor = (rep) => PALETTE[RAW.reps.indexOf(rep) % PALETTE.length];
+
+const sans = { fontFamily: "'DM Sans', 'Helvetica Neue', sans-serif" };
+const mono = { fontFamily: "'DM Mono', 'Menlo', monospace", fontVariantNumeric: "tabular-nums" };
+
+export default function Dashboard() {
+  const [selectedRep, setSelectedRep] = useState(null);
+  const [view, setView] = useState("overview");
+  const [metric, setMetric] = useState("net");
+  const [startMonth, setStartMonth] = useState("2025-04");
+  const [endMonth, setEndMonth] = useState("2026-02");
+
+  const months = useMemo(() => RAW.months.filter(m => m >= startMonth && m <= endMonth), [startMonth, endMonth]);
+
+  const ranking = useMemo(() => {
+    return RAW.reps.map(rep => {
+      let g=0, c=0, n=0, t=0, inv=0, cu=0;
+      months.forEach(m => { const d=get(rep,m); g+=d.g; c+=d.c; n+=d.n; t+=d.t; inv+=d.i; cu+=d.cu; });
+      return { rep, g, c, n, t, inv, cu, cpct: g>0 ? Math.abs(c)/g*100 : 0, avgNet: n/months.length };
+    }).sort((a,b) => b.n - a.n);
+  }, [months]);
+
+  const active = ranking.filter(r => r.t > 0);
+  const totals = useMemo(() => {
+    let g=0,c=0,n=0,inv=0; active.forEach(r=>{g+=r.g;c+=r.c;n+=r.n;inv+=r.inv}); return {g,c,n,inv};
+  }, [active]);
+
+  const chartData = useMemo(() => months.map(m => {
+    const row = { month: mo(m) };
+    active.forEach(r => { const d = get(r.rep, m); row[r.rep] = metric==="net"?d.n : metric==="gross"?d.g : metric==="customers"?d.cu : d.i; });
+    return row;
+  }), [months, metric, active]);
+
+  const repDetail = useMemo(() => {
+    if (!selectedRep) return [];
+    return months.map(m => ({ month: mo(m), key: m, ...get(selectedRep, m) }));
+  }, [selectedRep, months]);
+
+  const Pill = ({ k, label, cur, set }) => (
+    <button onClick={() => set(k)} style={{
+      ...sans, padding: "5px 14px", fontSize: 12, fontWeight: 500, cursor: "pointer",
+      border: cur===k ? "none" : "1px solid #d4d0cb", borderRadius: 3,
+      background: cur===k ? "#2b2b2b" : "#f5f4f1", color: cur===k ? "#f5f4f1" : "#777",
+    }}>{label}</button>
+  );
+
+  const th = (text, align="right", extra={}) => (
+    <th style={{ padding: "10px 14px", textAlign: align, fontWeight: 500, fontSize: 11, color: "#999", textTransform: "uppercase", letterSpacing: "0.05em", borderBottom: "2px solid #e8e5e0", ...sans, ...extra }}>{text}</th>
+  );
+
+  const td = (val, opts={}) => {
+    const { align="right", bold, color: col, isMono=true } = opts;
+    return <td style={{ padding: "9px 14px", textAlign: align, fontSize: bold?13:12, fontWeight: bold?600:400, color: col||"#444", ...(isMono?mono:{}), borderBottom: "1px solid #f0eeea" }}>{val}</td>;
+  };
+
+  return (
+    <div style={{ fontFamily: "'Source Serif 4', Georgia, serif", background: "#faf9f7", color: "#1a1a1a", minHeight: "100vh" }}>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+      {/* HEADER */}
+      <header style={{ padding: "24px 32px 0", borderBottom: "1px solid #e0ddd8" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12 }}>
+          <div>
+            <h1 style={{ margin: 0, fontSize: 24, fontWeight: 700, letterSpacing: "-0.02em" }}>Sales Performance</h1>
+            <p style={{ margin: "4px 0 0", fontSize: 13, ...sans, color: "#999" }}>Arcadian Outfitters &mdash; Rep Activity Report</p>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 4 }}>
+            {[["startMonth",startMonth,setStartMonth],["endMonth",endMonth,setEndMonth]].map(([k,val,set],i) => (
+              <span key={k} style={{ display:"flex", alignItems:"center", gap:6 }}>
+                {i===1 && <span style={{color:"#ccc"}}>&ndash;</span>}
+                <select value={val} onChange={e=>set(e.target.value)} style={{ ...mono, background:"#fff", border:"1px solid #d4d0cb", borderRadius:3, padding:"5px 8px", fontSize:12, color:"#333" }}>
+                  {RAW.months.map(m=><option key={m} value={m}>{mo(m)}</option>)}
+                </select>
+              </span>
+            ))}
+          </div>
+        </div>
+        <nav style={{ display: "flex", gap: 0, marginTop: 18 }}>
+          {[["overview","Overview"],["detail","By Rep"],["grid","Monthly Grid"]].map(([k,l]) => (
+            <button key={k} onClick={()=>setView(k)} style={{
+              ...sans, background:"none", border:"none", padding:"8px 20px 12px", cursor:"pointer", fontSize:13,
+              color: view===k?"#1a1a1a":"#aaa", fontWeight: view===k?600:400,
+              borderBottom: view===k?"2px solid #1a1a1a":"2px solid transparent",
+            }}>{l}</button>
+          ))}
+        </nav>
+      </header>
+
+      <main style={{ padding: "24px 32px 48px", maxWidth: 1320 }}>
+
+        {view==="overview" && <>
+          {/* Stats */}
+          <div style={{ display:"flex", gap:40, flexWrap:"wrap", marginBottom:28, paddingBottom:24, borderBottom:"1px solid #e0ddd8" }}>
+            {[
+              {l:"Net Revenue", v:f(totals.n), s:`${months.length} months, ${active.length} reps`},
+              {l:"Gross Sales", v:f(totals.g)},
+              {l:"Credits", v:f(totals.c), w:true},
+              {l:"Credit Rate", v:p(totals.g>0?Math.abs(totals.c)/totals.g*100:0), w:true},
+            ].map((item,i) => (
+              <div key={i}>
+                <div style={{...sans, fontSize:11, fontWeight:500, color:"#999", textTransform:"uppercase", letterSpacing:"0.07em", marginBottom:4}}>{item.l}</div>
+                <div style={{...mono, fontSize:22, fontWeight:500, color:item.w?"#8c4a2a":"#1a1a1a"}}>{item.v}</div>
+                {item.s && <div style={{...sans, fontSize:11, color:"#bbb", marginTop:2}}>{item.s}</div>}
+              </div>
+            ))}
+          </div>
+
+          {/* Chart */}
+          <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:10, flexWrap:"wrap", gap:8 }}>
+            <h2 style={{ margin:0, fontSize:16, fontWeight:600 }}>Monthly by Rep</h2>
+            <div style={{ display:"flex", gap:4 }}>
+              {[["net","Net"],["gross","Gross"],["customers","Customers"],["invoices","Invoices"]].map(([k,l])=>
+                <Pill key={k} k={k} label={l} cur={metric} set={setMetric}/>
+              )}
+            </div>
+          </div>
+
+          <div style={{ background:"#fff", border:"1px solid #e8e5e0", borderRadius:4, padding:"20px 14px 10px", marginBottom:32 }}>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart data={chartData} barCategoryGap="18%">
+                <CartesianGrid stroke="#f0efeb" vertical={false}/>
+                <XAxis dataKey="month" tick={{fill:"#999",fontSize:11,...sans}} axisLine={{stroke:"#e0ddd8"}} tickLine={false}/>
+                <YAxis tick={{fill:"#999",fontSize:11,...mono}} axisLine={false} tickLine={false} width={54}
+                  tickFormatter={v=>(metric==="net"||metric==="gross")?`$${(v/1000).toFixed(0)}k`:v}/>
+                <Tooltip contentStyle={{background:"#fff",border:"1px solid #e0ddd8",borderRadius:4,fontSize:12,...sans,boxShadow:"0 2px 6px rgba(0,0,0,.05)"}}
+                  labelStyle={{fontWeight:600,color:"#333",marginBottom:4}}
+                  formatter={(val,name)=>[(metric==="net"||metric==="gross")?f(val):val,name.trim()]}/>
+                {active.map(r=><Bar key={r.rep} dataKey={r.rep} stackId="a" fill={repColor(r.rep)}/>)}
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          {/* Table */}
+          <h2 style={{ fontSize:16, fontWeight:600, marginBottom:10 }}>Rep Rankings</h2>
+          <div style={{ background:"#fff", border:"1px solid #e8e5e0", borderRadius:4, overflow:"hidden" }}>
+            <table style={{ width:"100%", borderCollapse:"collapse", ...sans, fontSize:13 }}>
+              <thead><tr style={{background:"#f8f7f4"}}>
+                {th("","left",{width:36})}{th("Rep","left")}{th("Gross")}{th("Credits")}{th("Cr%")}{th("Net Sales")}{th("Invoices")}{th("Customers")}{th("Avg/Mo")}
+              </tr></thead>
+              <tbody>{active.map((r,i)=>(
+                <tr key={r.rep} onClick={()=>{setSelectedRep(r.rep);setView("detail")}} style={{cursor:"pointer"}}
+                  onMouseEnter={e=>e.currentTarget.style.background="#f8f7f4"}
+                  onMouseLeave={e=>e.currentTarget.style.background="transparent"}>
+                  {td(i+1,{color:"#ccc",align:"center"})}
+                  <td style={{padding:"9px 14px",fontWeight:600,borderBottom:"1px solid #f0eeea"}}>
+                    <span style={{display:"inline-block",width:10,height:10,borderRadius:2,background:repColor(r.rep),marginRight:8,verticalAlign:"middle"}}/>{r.rep.trim()}
+                  </td>
+                  {td(f(r.g))}{td(f(r.c),{color:"#8c4a2a"})}{td(p(r.cpct),{color:r.cpct>20?"#b91c1c":r.cpct>10?"#8c4a2a":"#999"})}
+                  {td(f(r.n),{bold:true,color:"#1a1a1a"})}{td(r.inv)}{td(r.cu)}{td(f(r.avgNet),{color:"#888"})}
+                </tr>
+              ))}</tbody>
+              <tfoot><tr style={{background:"#f8f7f4",borderTop:"2px solid #e0ddd8"}}>
+                <td colSpan={2} style={{padding:"10px 14px",fontWeight:600,fontSize:12,...sans,borderBottom:"none"}}>TOTAL</td>
+                {td(f(totals.g),{bold:true})}{td(f(totals.c),{bold:true,color:"#8c4a2a"})}{td(p(totals.g>0?Math.abs(totals.c)/totals.g*100:0),{color:"#888"})}
+                {td(f(totals.n),{bold:true,color:"#1a1a1a"})}{td(totals.inv,{bold:true})}<td style={{borderBottom:"none"}}/><td style={{borderBottom:"none"}}/>
+              </tr></tfoot>
+            </table>
+          </div>
+        </>}
+
+        {view==="detail" && <>
+          <div style={{display:"flex",gap:6,flexWrap:"wrap",marginBottom:24}}>
+            {active.map(r=>(
+              <button key={r.rep} onClick={()=>setSelectedRep(r.rep)} style={{
+                ...sans,fontSize:12,fontWeight:selectedRep===r.rep?600:400,cursor:"pointer",borderRadius:3,padding:"5px 14px",
+                border:selectedRep===r.rep?"none":"1px solid #d4d0cb",
+                background:selectedRep===r.rep?repColor(r.rep):"#fff",color:selectedRep===r.rep?"#fff":"#666",
+              }}>{r.rep.trim()}</button>
+            ))}
+          </div>
+
+          {selectedRep ? (()=>{
+            const r = ranking.find(x=>x.rep===selectedRep);
+            const sum = RAW.repSummary[selectedRep];
+            return <>
+              <div style={{display:"flex",gap:32,flexWrap:"wrap",marginBottom:24,paddingBottom:20,borderBottom:"1px solid #e0ddd8"}}>
+                {[
+                  {l:"Net Sales",v:f(r.n)},{l:"Gross",v:f(r.g)},{l:"Credits",v:f(r.c),w:true},
+                  {l:"Credit %",v:p(r.cpct),w:r.cpct>15},{l:"Invoices",v:r.inv},{l:"Customers",v:r.cu},{l:"Active Since",v:mo(sum.first_month)},
+                ].map((item,i)=>(
+                  <div key={i}>
+                    <div style={{...sans,fontSize:10,fontWeight:500,color:"#aaa",textTransform:"uppercase",letterSpacing:"0.07em",marginBottom:3}}>{item.l}</div>
+                    <div style={{...mono,fontSize:18,fontWeight:500,color:item.w?"#8c4a2a":"#1a1a1a"}}>{item.v}</div>
+                  </div>
+                ))}
+              </div>
+
+              <h3 style={{fontSize:15,fontWeight:600,marginBottom:10}}>{selectedRep.trim()} &mdash; Monthly</h3>
+              <div style={{background:"#fff",border:"1px solid #e8e5e0",borderRadius:4,padding:"20px 14px 10px",marginBottom:24}}>
+                <ResponsiveContainer width="100%" height={260}>
+                  <BarChart data={repDetail}>
+                    <CartesianGrid stroke="#f0efeb" vertical={false}/>
+                    <XAxis dataKey="month" tick={{fill:"#999",fontSize:11,...sans}} axisLine={{stroke:"#e0ddd8"}} tickLine={false}/>
+                    <YAxis tick={{fill:"#999",fontSize:11,...mono}} axisLine={false} tickLine={false} tickFormatter={v=>`$${(v/1000).toFixed(0)}k`} width={50}/>
+                    <Tooltip contentStyle={{background:"#fff",border:"1px solid #e0ddd8",borderRadius:4,fontSize:12,...sans}}
+                      formatter={(val,name)=>[f(val),name==="g"?"Gross":name==="c"?"Credits":"Net"]}/>
+                    <Bar dataKey="g" name="Gross" fill={repColor(selectedRep)} radius={[2,2,0,0]}/>
+                    <Bar dataKey="c" name="Credits" fill="#c9a070" radius={[2,2,0,0]}/>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div style={{background:"#fff",border:"1px solid #e8e5e0",borderRadius:4,overflow:"hidden"}}>
+                <table style={{width:"100%",borderCollapse:"collapse",...sans,fontSize:13}}>
+                  <thead><tr style={{background:"#f8f7f4"}}>
+                    {th("Month","left")}{th("Gross")}{th("Credits")}{th("Net")}{th("Invoices")}{th("Credit Memos")}{th("Customers")}
+                  </tr></thead>
+                  <tbody>{repDetail.map((d,i)=>(
+                    <tr key={d.key} style={{background:i%2?"#fcfbfa":"#fff"}}>
+                      <td style={{padding:"9px 14px",fontWeight:500,fontSize:13,borderBottom:"1px solid #f0eeea"}}>{d.month}</td>
+                      {td(d.g>0?f(d.g):"\u2014",{color:d.g>0?"#444":"#ccc"})}
+                      {td(d.c<0?f(d.c):"\u2014",{color:d.c<0?"#8c4a2a":"#ccc"})}
+                      {td(d.n!==0?f(d.n):"\u2014",{bold:true,color:d.n<0?"#b91c1c":"#1a1a1a"})}
+                      {td(d.i||"\u2014")}{td(d.cm||"\u2014",{color:d.cm>0?"#8c4a2a":"#ccc"})}{td(d.cu||"\u2014")}
+                    </tr>
+                  ))}</tbody>
+                </table>
+              </div>
+            </>;
+          })() : <div style={{textAlign:"center",padding:"60px 20px",color:"#bbb",...sans}}>Select a rep above.</div>}
+        </>}
+
+        {view==="grid" && <>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12,flexWrap:"wrap",gap:8}}>
+            <h2 style={{margin:0,fontSize:16,fontWeight:600}}>Monthly Grid</h2>
+            <div style={{display:"flex",gap:4}}>
+              {[["net","Net"],["gross","Gross"],["customers","Customers"],["invoices","Invoices"]].map(([k,l])=>
+                <Pill key={k} k={k} label={l} cur={metric} set={setMetric}/>
+              )}
+            </div>
+          </div>
+          <div style={{background:"#fff",border:"1px solid #e8e5e0",borderRadius:4,overflow:"hidden"}}>
+            <div style={{overflowX:"auto"}}>
+              <table style={{width:"100%",borderCollapse:"collapse",...sans,fontSize:12}}>
+                <thead><tr style={{background:"#f8f7f4"}}>
+                  <th style={{padding:"10px 14px",textAlign:"left",fontWeight:500,fontSize:11,color:"#999",textTransform:"uppercase",letterSpacing:"0.05em",borderBottom:"2px solid #e8e5e0",position:"sticky",left:0,background:"#f8f7f4",zIndex:1,minWidth:130,...sans}}>Rep</th>
+                  {months.map(m=><th key={m} style={{padding:"10px 8px",textAlign:"right",fontWeight:500,fontSize:10,color:"#999",textTransform:"uppercase",letterSpacing:"0.03em",borderBottom:"2px solid #e8e5e0",whiteSpace:"nowrap",...sans}}>{mo(m)}</th>)}
+                  <th style={{padding:"10px 14px",textAlign:"right",fontWeight:600,fontSize:11,color:"#555",borderBottom:"2px solid #e8e5e0",borderLeft:"2px solid #e0ddd8",...sans}}>TOTAL</th>
+                </tr></thead>
+                <tbody>{active.map((r,idx)=>{
+                  const total = metric==="net"?r.n:metric==="gross"?r.g:metric==="customers"?r.cu:r.inv;
+                  const bg = idx%2?"#fcfbfa":"#fff";
+                  return (
+                    <tr key={r.rep} style={{background:bg}}>
+                      <td style={{padding:"8px 14px",fontWeight:500,fontSize:12,position:"sticky",left:0,background:bg,zIndex:1,whiteSpace:"nowrap",borderBottom:"1px solid #f0eeea"}}>
+                        <span style={{display:"inline-block",width:8,height:8,borderRadius:2,background:repColor(r.rep),marginRight:7,verticalAlign:"middle"}}/>{r.rep.trim()}
+                      </td>
+                      {months.map(m=>{
+                        const d=get(r.rep,m);
+                        const val=metric==="net"?d.n:metric==="gross"?d.g:metric==="customers"?d.cu:d.i;
+                        const allV=active.map(ar=>{const dd=get(ar.rep,m);return metric==="net"?dd.n:metric==="gross"?dd.g:metric==="customers"?dd.cu:dd.i;});
+                        const mx=Math.max(...allV,1);
+                        const heat=val>0?Math.min(val/mx,1):0;
+                        return <td key={m} style={{padding:"8px 8px",textAlign:"right",...mono,fontSize:11,borderBottom:"1px solid #f0eeea",color:val===0?"#d4d0cb":val<0?"#b91c1c":"#333",background:val>0?`rgba(30,58,95,${heat*0.11})`:"transparent"}}>{val===0?"\u2014":(metric==="net"||metric==="gross")?f(val):val}</td>;
+                      })}
+                      <td style={{padding:"8px 14px",textAlign:"right",...mono,fontSize:12,fontWeight:600,borderLeft:"2px solid #e0ddd8",borderBottom:"1px solid #f0eeea"}}>{(metric==="net"||metric==="gross")?f(total):total}</td>
+                    </tr>
+                  );
+                })}</tbody>
+                <tfoot><tr style={{background:"#f8f7f4",borderTop:"2px solid #e0ddd8"}}>
+                  <td style={{padding:"10px 14px",fontWeight:700,fontSize:11,position:"sticky",left:0,background:"#f8f7f4",zIndex:1,textTransform:"uppercase",letterSpacing:"0.04em",...sans}}>Total</td>
+                  {months.map(m=>{let mT=0;active.forEach(r=>{const d=get(r.rep,m);mT+=metric==="net"?d.n:metric==="gross"?d.g:metric==="customers"?d.cu:d.i;});return <td key={m} style={{padding:"10px 8px",textAlign:"right",...mono,fontSize:11,fontWeight:600,color:"#333"}}>{(metric==="net"||metric==="gross")?f(mT):mT}</td>;})}
+                  <td style={{padding:"10px 14px",textAlign:"right",...mono,fontSize:13,fontWeight:700,borderLeft:"2px solid #e0ddd8"}}>{(metric==="net"||metric==="gross")?f(metric==="net"?totals.n:totals.g):totals.inv}</td>
+                </tr></tfoot>
+              </table>
+            </div>
+          </div>
+        </>}
+      </main>
+
+      <footer style={{padding:"14px 32px",...sans,fontSize:11,color:"#c4c0bb",borderTop:"1px solid #e0ddd8"}}>
+        Source: NetSuite &middot; InStore transactions rolled into primary rep &middot; {mo(RAW.months[0])} &ndash; {mo(RAW.months[RAW.months.length-1])}
+      </footer>
+    </div>
+  );
+}
