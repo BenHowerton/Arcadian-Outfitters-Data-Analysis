@@ -1,0 +1,688 @@
+Customer,Segment,Primary_Rep,Net_Revenue,Days_Since_Last_Order,Recommended_Visit_Days,Urgency
+Idaho Novus Classical Academy,E - New / One-Time,- Unassigned -,3024.0,65,21.0,OVERDUE
+Karl Malone Power Sports,B - Steady Performers,Adam Scott,3334.0,53,24.0,OVERDUE
+Buena Vista Lagrees,D - Low & Slow,Andy Coon,1404.0,182,3.0,OVERDUE
+Ace Hardware - Brighton Pointe,D - Low & Slow,Andy Coon,480.0,245,162.0,OVERDUE
+Basalt Store,D - Low & Slow,Andy Coon,1404.0,183,100.0,OVERDUE
+Mesa Bloom Market,B - Steady Performers,Andy Coon,3408.0,121,67.0,OVERDUE
+The Border Store - Hildale,D - Low & Slow,Andy Coon,1512.0,63,17.0,OVERDUE
+Moab Stu Mart Chevron,D - Low & Slow,Andy Coon,2268.0,67,36.0,OVERDUE
+Lee's Marketplace Foxboro,D - Low & Slow,Andy Coon,2044.5,135,106.0,OVERDUE
+Venture Fuel Dino Mart,B - Steady Performers,Andy Coon,2748.0,53,24.0,OVERDUE
+Miners Trading Post,C - Moderate Movers,Andy Coon,2424.0,122,97.0,OVERDUE
+Mountainland One Stop,B - Steady Performers,Andy Coon,5965.5,66,48.0,OVERDUE
+Ace Hardware - Colonial UT,D - Low & Slow,Andy Coon,1116.0,66,51.0,OVERDUE
+Palisade Dino Mart,E - New / One-Time,Andy Coon,600.0,119,104.0,OVERDUE
+Florissant Mercantile,D - Low & Slow,Andy Coon,3000.0,81,68.0,OVERDUE
+The Mart At Park City Chevron,D - Low & Slow,Andy Coon,3463.5,67,62.0,OVERDUE
+Lees Marketplace 4th West,D - Low & Slow,Andy Coon,1998.0,95,91.0,OVERDUE
+Sams Patch - Wellsville,E - New / One-Time,Andy Coon,2496.0,16,12.0,OVERDUE
+Allred Ace Hardware - Orem,E - New / One-Time,Andy Coon,1008.0,15,22.0,Urgent (< 2 weeks)
+The Market at Park City,D - Low & Slow,Andy Coon,1908.0,119,127.0,Urgent (< 2 weeks)
+Moose Buns,E - New / One-Time,Andy Coon,828.0,51,60.0,Urgent (< 2 weeks)
+Duchesne Real Estate Dev.,B - Steady Performers,Andy Coon,4008.0,52,64.0,Urgent (< 2 weeks)
+KJ's #80228,D - Low & Slow,Andy Coon,672.0,140,154.0,Urgent (< 2 weeks)
+Moab Shell Station,B - Steady Performers,Andy Coon,7897.5,14,29.0,Soon (2-4 weeks)
+Nates Place,E - New / One-Time,Andy Coon,1248.0,2,24.0,Soon (2-4 weeks)
+Ron's Seed Supply,E - New / One-Time,Andy Coon,1344.0,0,22.0,Soon (2-4 weeks)
+Carter's Market,C - Moderate Movers,Andy Coon,3552.0,78,102.0,Soon (2-4 weeks)
+Ruggiero's Ace Hardware,E - New / One-Time,Ann Wheelock,2422.5,289,114.0,OVERDUE
+Empire Foods LLC,E - New / One-Time,Ann Wheelock,2268.0,303,132.0,OVERDUE
+Liberty Lake Ace Hardware,E - New / One-Time,Ann Wheelock,2184.0,310,140.0,OVERDUE
+Elevate Boutique,E - New / One-Time,Ann Wheelock,2184.0,296,134.0,OVERDUE
+Dover Bay Resort,D - Low & Slow,Ann Wheelock,2316.0,171,67.0,OVERDUE
+Naples General Store,E - New / One-Time,Ann Wheelock,1344.0,242,178.0,OVERDUE
+Chevron Market,D - Low & Slow,Ann Wheelock,1317.0,121,68.0,OVERDUE
+Ranch and Home,B - Steady Performers,Ann Wheelock,4512.0,98,50.0,OVERDUE
+The Hat Shop,B - Steady Performers,Ann Wheelock,5592.0,95,49.0,OVERDUE
+Holiday Shores,D - Low & Slow,Ann Wheelock,3504.0,107,64.0,OVERDUE
+Colville Fuel-Noisy Waters,D - Low & Slow,Ann Wheelock,2808.0,100,67.0,OVERDUE
+Harvest Foods - Kettle Falls,D - Low & Slow,Ann Wheelock,2640.0,100,68.0,OVERDUE
+Lakes Harvest Foods,D - Low & Slow,Ann Wheelock,2280.0,102,71.0,OVERDUE
+Samuels Store and Blue Heron Cafe,D - Low & Slow,Ann Wheelock,1152.0,141,111.0,OVERDUE
+Country Mercantile,E - New / One-Time,Ann Wheelock,1152.0,203,174.0,OVERDUE
+Quinns Hot Springs Resort,C - Moderate Movers,Ann Wheelock,2760.0,142,114.0,OVERDUE
+Lancaster Market,D - Low & Slow,Ann Wheelock,5739.0,67,42.0,OVERDUE
+Clark Fork Pantry,D - Low & Slow,Ann Wheelock,864.0,203,194.0,OVERDUE
+Sandcreek Schweitzer Conoco,D - Low & Slow,Ann Wheelock,3744.0,73,71.0,OVERDUE
+Three Mile Corner Store,D - Low & Slow,Ann Wheelock,4776.0,45,43.0,OVERDUE
+Colville Fuels Half Sun,D - Low & Slow,Ann Wheelock,2712.0,87,92.0,Urgent (< 2 weeks)
+Exxon Jifi Stop Prairie Ave,D - Low & Slow,Ann Wheelock,3396.0,67,80.0,Urgent (< 2 weeks)
+Kay's Quick Stop,D - Low & Slow,Ann Wheelock,2448.0,67,85.0,Soon (2-4 weeks)
+Spoko Fuel,C - Moderate Movers,Ann Wheelock,2928.0,87,108.0,Soon (2-4 weeks)
+Sturgeon Station Travel Center,D - Low & Slow,Ann Wheelock,2655.0,73,100.0,Soon (2-4 weeks)
+Ace Hardware-Jerome,E - New / One-Time,Bobbi Marshall,3247.5,296,69.0,OVERDUE
+A-4 Quality Properties,E - New / One-Time,Bobbi Marshall,2233.5,185,73.0,OVERDUE
+Sourdough Lodge,D - Low & Slow,Bobbi Marshall,1824.0,199,95.0,OVERDUE
+Anderson Hardware & Supply,E - New / One-Time,Bobbi Marshall,1363.5,212,109.0,OVERDUE
+Jack's Travel Plaza,D - Low & Slow,Bobbi Marshall,2242.0,171,79.0,OVERDUE
+7C Junction & Deli,D - Low & Slow,Bobbi Marshall,2208.0,151,69.0,OVERDUE
+Valley Express Travel Plaza,E - New / One-Time,Bobbi Marshall,1872.0,144,62.0,OVERDUE
+A3 New Horizons Pit Stop,E - New / One-Time,Bobbi Marshall,1755.0,137,64.0,OVERDUE
+TP Gas,D - Low & Slow,Bobbi Marshall,1869.0,136,94.0,OVERDUE
+Great Scotts-Eagle,B - Steady Performers,Bobbi Marshall,5875.5,57,39.0,OVERDUE
+Smoke City,D - Low & Slow,Bobbi Marshall,1632.0,45,50.0,Urgent (< 2 weeks)
+The Tackle Shop,E - New / One-Time,Bobbi Marshall,864.0,65,74.0,Urgent (< 2 weeks)
+Great Scotts-Eagle:Garden Valley Chevron Store,B - Steady Performers,Bobbi Marshall,7231.5,24,41.0,Soon (2-4 weeks)
+Fast Stop-Hagerman,D - Low & Slow,Bobbi Marshall,1752.0,56,77.0,Soon (2-4 weeks)
+Dan's Ferry Service,D - Low & Slow,Bobbi Marshall,3324.0,63,85.0,Soon (2-4 weeks)
+D & J Fuel Bobcat Corner,B - Steady Performers,Bobbi Marshall,1974.0,49,74.0,Soon (2-4 weeks)
+Inspired By Love Hair Salon,B - Steady Performers,Christa VIE,4488.0,35,6.0,OVERDUE
+Mustang Towing,E - New / One-Time,Christa VIE,864.0,59,67.0,Urgent (< 2 weeks)
+IPCC-Idaho Pest Control,E - New / One-Time,Christa VIE,1674.0,7,18.0,Urgent (< 2 weeks)
+Depoe Bay Charters,E - New / One-Time,Christa VIE,1344.0,9,22.0,Urgent (< 2 weeks)
+Florist Farms,B - Steady Performers,Christa VIE,4315.0,3,18.0,Soon (2-4 weeks)
+Locking Horns Riverside Restaurant,B - Steady Performers,Christa VIE,7429.5,17,38.0,Soon (2-4 weeks)
+Capps Home Building Center,D - Low & Slow,Dale  Becker,1248.0,148,5.0,OVERDUE
+Moneta Farm and Home Supply,D - Low & Slow,Dale  Becker,1368.0,88,92.0,Urgent (< 2 weeks)
+Jacobson Lumber,D - Low & Slow,Decker Larson,1224.0,168,2.0,OVERDUE
+Clearwater River Casino Lodge,D - Low & Slow,Decker Larson,-183.0,77,5.0,OVERDUE
+Rosauers Supermarket #109,D - Low & Slow,Decker Larson,1344.0,136,75.0,OVERDUE
+Gateway Store & Cafe,D - Low & Slow,Decker Larson,1932.0,133,76.0,OVERDUE
+Huckle & Sage,D - Low & Slow,Decker Larson,2292.0,133,78.0,OVERDUE
+Cougar Foodmart,D - Low & Slow,Decker Larson,2203.5,100,90.0,OVERDUE
+Nez Perce Phillips 66,D - Low & Slow,Decker Larson,1338.0,81,77.0,OVERDUE
+Browns Mountain Market,D - Low & Slow,Decker Larson,2037.0,102,99.0,OVERDUE
+Barneys Harvest Foods - Orofino,D - Low & Slow,Decker Larson,3778.5,53,63.0,Urgent (< 2 weeks)
+Salmon Rapids Lodge,D - Low & Slow,Decker Larson,987.0,163,175.0,Urgent (< 2 weeks)
+Bo's Barn,D - Low & Slow,Decker Larson,3376.5,52,79.0,Soon (2-4 weeks)
+Escondido Hawthorne Country Store,D - Low & Slow,Devin Friebe,1920.0,210,24.0,OVERDUE
+Rincon Travel Plaza,E - New / One-Time,Devin Friebe,2496.0,242,96.0,OVERDUE
+Valley Center Oil Corporation,E - New / One-Time,Devin Friebe,1344.0,241,177.0,OVERDUE
+Fairway Foods - Idyllwild,E - New / One-Time,Devin Friebe,1344.0,214,157.0,OVERDUE
+Ace Hardware - Montebello #19185,E - New / One-Time,Devin Friebe,1344.0,63,46.0,OVERDUE
+Newport Marina,D - Low & Slow,Elijah Benedick,1032.0,185,60.0,OVERDUE
+Cousins Inn,D - Low & Slow,Elijah Benedick,1152.0,190,112.0,OVERDUE
+Mountain High Grocery,D - Low & Slow,Elijah Benedick,4848.0,73,47.0,OVERDUE
+B & S Market,E - New / One-Time,Elijah Benedick,0.0,31,37.0,Urgent (< 2 weeks)
+Seaside Market,E - New / One-Time,Elijah Benedick,828.0,35,42.0,Urgent (< 2 weeks)
+Arco Station - Salem,E - New / One-Time,Elijah Benedick,828.0,45,53.0,Urgent (< 2 weeks)
+Chevron - Salem OR,E - New / One-Time,Elijah Benedick,828.0,45,53.0,Urgent (< 2 weeks)
+The Seagulp,E - New / One-Time,Elijah Benedick,828.0,45,53.0,Urgent (< 2 weeks)
+US Mart #155,E - New / One-Time,Elijah Benedick,828.0,46,55.0,Urgent (< 2 weeks)
+Taj Food Mart,E - New / One-Time,Elijah Benedick,828.0,52,62.0,Urgent (< 2 weeks)
+Space Age Wasco,E - New / One-Time,Elijah Benedick,0.0,80,96.0,Soon (2-4 weeks)
+Dintys Market & Deli,D - Low & Slow,Elijah Benedick,1320.0,115,132.0,Soon (2-4 weeks)
+Arrowhead Travel Plaza,D - Low & Slow,Elijah Benedick,3516.0,51,71.0,Soon (2-4 weeks)
+Nehalem Food Mart,D - Low & Slow,Elijah Benedick,2664.0,56,84.0,Soon (2-4 weeks)
+Okanogan IGA Market,E - New / One-Time,Eric Arnold,2352.0,87,36.0,OVERDUE
+Wray's Marketfresh IGA Southgate,E - New / One-Time,Eric Arnold,2256.0,87,38.0,OVERDUE
+Dave's Sports Shop,E - New / One-Time,Eric Arnold,1032.0,129,110.0,OVERDUE
+Oak Creek Ace Hardware,E - New / One-Time,Eric Arnold,2496.0,9,12.0,Urgent (< 2 weeks)
+Packwood Ace Hardware,E - New / One-Time,Eric Arnold,2496.0,9,12.0,Urgent (< 2 weeks)
+Allyn Market,C - Moderate Movers,Eric Arnold,3264.0,88,97.0,Urgent (< 2 weeks)
+Hometown Ace Hardware Yakima,B - Steady Performers,Eric Arnold,4572.0,9,25.0,Soon (2-4 weeks)
+Mineral Lake Market,E - New / One-Time,Eric Arnold,1440.0,3,21.0,Soon (2-4 weeks)
+Tillamook Sporting Goods,C - Moderate Movers,Eric Arnold,4800.0,53,77.0,Soon (2-4 weeks)
+Cedar Crest Chevron,E - New / One-Time,InHouse Orders,1536.0,46,15.0,OVERDUE
+Fast Stop Beaver Utah,E - New / One-Time,InHouse Orders,1152.0,88,75.0,OVERDUE
+Coastal Pantry #4,E - New / One-Time,InHouse Orders,1344.0,25,22.0,OVERDUE
+Hurst Ace Hardware,C - Moderate Movers,InHouse Orders,3168.0,86,90.0,Urgent (< 2 weeks)
+Honeys Marketplace,D - Low & Slow,InHouse Orders,2587.5,63,69.0,Urgent (< 2 weeks)
+Whammers Enterprises 1 LLC (Sinclair),C - Moderate Movers,InHouse Orders,2784.0,87,102.0,Soon (2-4 weeks)
+Davis Foods,C - Moderate Movers,InHouse Orders,2592.0,88,108.0,Soon (2-4 weeks)
+Supreme Smoke Shop,B - Steady Performers,JADEN BLACK,1951.5,231,46.0,OVERDUE
+Beach Exxon,D - Low & Slow,JADEN BLACK,1932.0,203,26.0,OVERDUE
+Fuel Mart - North Charleston,B - Steady Performers,JADEN BLACK,2509.5,219,48.0,OVERDUE
+Buy and Go #6,E - New / One-Time,JADEN BLACK,2184.0,305,138.0,OVERDUE
+WAVES MART & GRILL,E - New / One-Time,JADEN BLACK,948.0,276,109.0,OVERDUE
+Candys Exxon,D - Low & Slow,JADEN BLACK,1944.0,177,53.0,OVERDUE
+Joeys Place,E - New / One-Time,JADEN BLACK,1728.0,203,80.0,OVERDUE
+Tiger Mart 3,E - New / One-Time,JADEN BLACK,2496.0,203,80.0,OVERDUE
+Johnston Count Mart,D - Low & Slow,JADEN BLACK,1927.5,171,80.0,OVERDUE
+Rosco's,E - New / One-Time,JADEN BLACK,1536.0,165,106.0,OVERDUE
+Red Dot,E - New / One-Time,JADEN BLACK,1344.0,186,137.0,OVERDUE
+Happy Smoke,E - New / One-Time,JADEN BLACK,1344.0,177,130.0,OVERDUE
+BP Sky Mart #299,E - New / One-Time,JADEN BLACK,168.0,280,253.0,OVERDUE
+Hamletts Market,D - Low & Slow,JADEN BLACK,61.5,170,146.0,OVERDUE
+Coastal Pantry 3,D - Low & Slow,JADEN BLACK,2580.0,93,92.0,OVERDUE
+Bailey Kwik Pick,D - Low & Slow,JADEN BLACK,-147.0,134,134.0,OVERDUE
+Kia Quick Mart,E - New / One-Time,JADEN BLACK,141.0,226,232.0,Urgent (< 2 weeks)
+Short Trip 8,D - Low & Slow,JADEN BLACK,1344.0,93,103.0,Urgent (< 2 weeks)
+Stop N Go #12,D - Low & Slow,JADEN BLACK,2472.0,74,101.0,Soon (2-4 weeks)
+Stage Stop Station,E - New / One-Time,Jason Black,2496.0,259,102.0,OVERDUE
+Bryce Canyon Rv and Gas LLC,D - Low & Slow,Jason Black,2842.5,162,43.0,OVERDUE
+Delta Jubilee Foods,D - Low & Slow,Jason Black,2208.0,170,79.0,OVERDUE
+Griffin General Merchandise,E - New / One-Time,Jason Black,1344.0,259,190.0,OVERDUE
+Quality Market,E - New / One-Time,Jason Black,1344.0,259,190.0,OVERDUE
+Ace Hardware-Mesquite,E - New / One-Time,Jason Black,1344.0,248,182.0,OVERDUE
+Todd's Market,D - Low & Slow,Jason Black,1536.0,170,114.0,OVERDUE
+Dakota Ace Hardware,E - New / One-Time,Jason Black,2448.0,94,38.0,OVERDUE
+Digby's Market,C - Moderate Movers,Jason Black,3456.0,123,79.0,OVERDUE
+Joe’s Main Street Market,B - Steady Performers,Jason Black,5760.0,79,46.0,OVERDUE
+Cedar Band Travel Plaza,B - Steady Performers,Jason Black,3348.0,79,51.0,OVERDUE
+Griffy's Shell,D - Low & Slow,Jason Black,3552.0,88,66.0,OVERDUE
+Market Express (Chevron),D - Low & Slow,Jason Black,1824.0,122,112.0,OVERDUE
+Sinclair (First Stop),D - Low & Slow,Jason Black,1344.0,140,133.0,OVERDUE
+Royals Foodtown,B - Steady Performers,Jason Black,4140.0,63,66.0,Urgent (< 2 weeks)
+Moapa Paiute Travel Plaza,C - Moderate Movers,Jason Black,3456.0,74,86.0,Urgent (< 2 weeks)
+Bear Valley RV Campground Resort LLC,D - Low & Slow,Jason Black,3216.0,66,90.0,Soon (2-4 weeks)
+Ace Hardware - Red Bluff,E - New / One-Time,Jeremiah Wagenman,2496.0,9,12.0,Urgent (< 2 weeks)
+Twin Arrows Navajo Casino Resort,E - New / One-Time,Jimmy Latter,1248.0,24,24.0,OVERDUE
+The Western Ranchman Store,E - New / One-Time,Jimmy Latter,864.0,7,34.0,Soon (2-4 weeks)
+Stage Stop - Island Park,B - Steady Performers,Lamar Helm,4623.0,193,19.0,OVERDUE
+Exxon Rainy Creek,D - Low & Slow,Lamar Helm,1440.0,231,61.0,OVERDUE
+Polson Bay Grocery,E - New / One-Time,Lamar Helm,2184.0,303,137.0,OVERDUE
+Dubois Travel Stop,E - New / One-Time,Lamar Helm,2184.0,297,134.0,OVERDUE
+Jays 1 Stop,B - Steady Performers,Lamar Helm,3480.0,200,58.0,OVERDUE
+Allens Manix Store,D - Low & Slow,Lamar Helm,2592.0,147,42.0,OVERDUE
+Robin's Roost-Sam Patch Co. Grocer and Sundries,D - Low & Slow,Lamar Helm,3744.0,123,24.0,OVERDUE
+1 Stop - Seeley Lake,E - New / One-Time,Lamar Helm,657.0,227,129.0,OVERDUE
+Super 1 Foods,B - Steady Performers,Lamar Helm,3936.0,149,52.0,OVERDUE
+Hillview Chevron,D - Low & Slow,Lamar Helm,1728.0,176,82.0,OVERDUE
+Papa's Market,D - Low & Slow,Lamar Helm,2304.0,186,94.0,OVERDUE
+Aries Gas and Grocery,E - New / One-Time,Lamar Helm,1632.0,226,137.0,OVERDUE
+Westside Market,B - Steady Performers,Lamar Helm,5712.0,123,40.0,OVERDUE
+Madison Foods,D - Low & Slow,Lamar Helm,5952.0,108,34.0,OVERDUE
+Gary And Leos Fresh Foods,C - Moderate Movers,Lamar Helm,3456.0,142,69.0,OVERDUE
+Rex's Market,C - Moderate Movers,Lamar Helm,3336.0,141,72.0,OVERDUE
+Last Chance C Store - Island Park,B - Steady Performers,Lamar Helm,14592.0,65,17.0,OVERDUE
+Fortine Merc,E - New / One-Time,Lamar Helm,1176.0,297,249.0,OVERDUE
+Montana City Store,E - New / One-Time,Lamar Helm,2376.0,74,31.0,OVERDUE
+Henry's Lake Station,E - New / One-Time,Lamar Helm,780.0,192,152.0,OVERDUE
+Pinedale Sinclair,D - Low & Slow,Lamar Helm,3552.0,84,48.0,OVERDUE
+Army Surplus Store,B - Steady Performers,Lamar Helm,6698.0,66,34.0,OVERDUE
+Bob's Valley Market,B - Steady Performers,Lamar Helm,5328.0,77,46.0,OVERDUE
+Beartooth Market,B - Steady Performers,Lamar Helm,5280.0,79,49.0,OVERDUE
+Points North Trading,E - New / One-Time,Lamar Helm,1092.0,301,272.0,OVERDUE
+Roxy's Market,B - Steady Performers,Lamar Helm,6588.0,63,38.0,OVERDUE
+Essential Fuels Bridger,B - Steady Performers,Lamar Helm,4980.0,66,43.0,OVERDUE
+East End Cenex,B - Steady Performers,Lamar Helm,4056.0,65,56.0,OVERDUE
+Victor's Market,D - Low & Slow,Lamar Helm,4716.0,65,59.0,OVERDUE
+Alpine Standard/Chevron,D - Low & Slow,Lamar Helm,792.0,84,80.0,OVERDUE
+Hoback Market,B - Steady Performers,Lamar Helm,15702.0,17,20.0,Urgent (< 2 weeks)
+Crow Nation Express,D - Low & Slow,Lamar Helm,4164.0,67,73.0,Urgent (< 2 weeks)
+Dans Ace Hardware - Rexburg,E - New / One-Time,Lamar Helm,1920.0,9,15.0,Urgent (< 2 weeks)
+Mountain View Co-op,D - Low & Slow,Lamar Helm,3828.0,65,73.0,Urgent (< 2 weeks)
+Ace Hardware - Jackson WY,C - Moderate Movers,Lamar Helm,2496.0,81,90.0,Urgent (< 2 weeks)
+Sam Patch Co. Grocer & Sundries LLC,D - Low & Slow,Lamar Helm,7452.0,30,39.0,Urgent (< 2 weeks)
+468 Market,D - Low & Slow,Lamar Helm,3264.0,79,90.0,Urgent (< 2 weeks)
+Rays Oasis,E - New / One-Time,Lamar Helm,828.0,65,77.0,Urgent (< 2 weeks)
+Clinton Market,B - Steady Performers,Lamar Helm,5904.0,28,41.0,Urgent (< 2 weeks)
+Fickler Oil Co.,B - Steady Performers,Lamar Helm,10692.0,7,27.0,Soon (2-4 weeks)
+Friendly's Sinclair,D - Low & Slow,Lamar Helm,2856.0,80,102.0,Soon (2-4 weeks)
+Valley Farmers Supply Reed Point,D - Low & Slow,Lamar Helm,2017.5,87,111.0,Soon (2-4 weeks)
+Walters Family Foods - ACE,D - Low & Slow,Lamar Helm,2208.0,79,107.0,Soon (2-4 weeks)
+Big Horn BBQ,E - New / One-Time,Maren Sowerby,1440.0,296,203.0,OVERDUE
+Ace Hardware Louies Home Center,E - New / One-Time,Matthew  Jorgensen,564.0,232,170.0,OVERDUE
+Ace Hardware Wingfield,C - Moderate Movers,Matthew  Jorgensen,2688.0,85,102.0,Soon (2-4 weeks)
+JLF Enterprises,E - New / One-Time,Merlin Gleed,2304.0,203,87.0,OVERDUE
+The Big Horn Y,D - Low & Slow,Merlin Gleed,960.0,189,77.0,OVERDUE
+Enerbase Travel Plaza,E - New / One-Time,Merlin Gleed,1440.0,277,190.0,OVERDUE
+Shell Foodmart #101,D - Low & Slow,Merlin Gleed,864.0,169,86.0,OVERDUE
+Ace Hardware Chadron NE,D - Low & Slow,Merlin Gleed,1953.0,147,76.0,OVERDUE
+Shell Foodmart  #102,D - Low & Slow,Merlin Gleed,3840.0,95,40.0,OVERDUE
+Fast Lane,D - Low & Slow,Merlin Gleed,2400.0,121,67.0,OVERDUE
+Makoti Enerbase C-Store,E - New / One-Time,Merlin Gleed,1152.0,182,156.0,OVERDUE
+Big Horn Coop. Riverton,D - Low & Slow,Merlin Gleed,1056.0,122,98.0,OVERDUE
+Buck Horn Travel Plaza,C - Moderate Movers,Merlin Gleed,3192.0,99,78.0,OVERDUE
+Real-Tuff Livestock Equipment,E - New / One-Time,Merlin Gleed,1512.0,39,25.0,OVERDUE
+Bucks Travel Stop,E - New / One-Time,Merlin Gleed,888.0,99,110.0,Urgent (< 2 weeks)
+Northwest Farm Supply,C - Moderate Movers,Merlin Gleed,3144.0,72,88.0,Soon (2-4 weeks)
+Essential Fuels,E - New / One-Time,Merlin Gleed,780.0,66,83.0,Soon (2-4 weeks)
+Super C Store,E - New / One-Time,Merlin Gleed,672.0,49,71.0,Soon (2-4 weeks)
+Buck Electric Ace Hardware,E - New / One-Time,Natalie  Brydson,2496.0,275,109.0,OVERDUE
+H & L Produce,E - New / One-Time,Natalie  Brydson,1344.0,261,192.0,OVERDUE
+Purdy Cost Less,D - Low & Slow,Natalie  Brydson,2112.0,128,85.0,OVERDUE
+Lake Kathryne Ace Hardware,D - Low & Slow,Natalie  Brydson,1920.0,128,120.0,OVERDUE
+Ace Hardware - Corning,E - New / One-Time,Paula Hemmen,2496.0,259,102.0,OVERDUE
+Lakeside Market - Oroville,B - Steady Performers,Paula Hemmen,4032.0,170,45.0,OVERDUE
+Willows Ace Hardware,E - New / One-Time,Paula Hemmen,2496.0,189,75.0,OVERDUE
+Grocery Outlet - Blue Diamond,B - Steady Performers,Unassigned,4721.599999999999,269,8.0,OVERDUE
+Grocery Outlet - LaQuinta,B - Steady Performers,Unassigned,3813.6,214,5.0,OVERDUE
+Grocery Outlet - Grand Terrace,D - Low & Slow,Unassigned,2360.7999999999997,214,13.0,OVERDUE
+Grocery Outlet - City Heights,D - Low & Slow,Unassigned,2088.4,214,14.0,OVERDUE
+BJ’S Food Mart,D - Low & Slow,Unassigned,1824.0,231,32.0,OVERDUE
+Grocery Outlet - Lacey,B - Steady Performers,Unassigned,2281.3499999999995,227,28.0,OVERDUE
+Good2Go #414,D - Low & Slow,Unassigned,493.5,235,38.0,OVERDUE
+Grocery Outlet - Truckee,E - New / One-Time,Unassigned,5538.8,240,43.0,OVERDUE
+Good2Go #102,D - Low & Slow,Unassigned,1135.5,198,5.0,OVERDUE
+Grocery Outlet - Orange,D - Low & Slow,Unassigned,2372.1499999999996,214,21.0,OVERDUE
+Fast Stop #1161,D - Low & Slow,Unassigned,1725.0,182,2.0,OVERDUE
+The Market at Vail,D - Low & Slow,Unassigned,-168.0,182,4.0,OVERDUE
+Grocery Outlet - Arroyo Grande,E - New / One-Time,Unassigned,2184.0,309,139.0,OVERDUE
+Grocery Outlet - Beaumont,E - New / One-Time,Unassigned,2184.0,309,139.0,OVERDUE
+Grocery Outlet - Port Hueneme,E - New / One-Time,Unassigned,2184.0,309,139.0,OVERDUE
+Grocery Outlet - South City,E - New / One-Time,Unassigned,441.0,310,140.0,OVERDUE
+Grocery Outlet - Springfield,E - New / One-Time,Unassigned,2184.0,310,140.0,OVERDUE
+Grocery Outlet - Ventura,E - New / One-Time,Unassigned,2184.0,310,140.0,OVERDUE
+Grocery Outlet-San Rafael,E - New / One-Time,Unassigned,2184.0,310,140.0,OVERDUE
+Black Sheep Sporting Goods,E - New / One-Time,Unassigned,2496.0,280,111.0,OVERDUE
+Grocery Outlet - Santa Clarita,E - New / One-Time,Unassigned,2360.7999999999997,289,121.0,OVERDUE
+Grocery Outlet - Long Beach 7th,E - New / One-Time,Unassigned,2360.7999999999997,284,118.0,OVERDUE
+Brush Creek Gas Grocery and Farm,B - Steady Performers,Unassigned,2976.0,198,37.0,OVERDUE
+The Market - Sidney MT,E - New / One-Time,Unassigned,2496.0,261,103.0,OVERDUE
+Grocery Outlet - Encinitas,E - New / One-Time,Unassigned,2360.7999999999997,266,111.0,OVERDUE
+Escondido Major Market,E - New / One-Time,Unassigned,2496.0,252,100.0,OVERDUE
+Grocery Outlet - Laguna Niguel,E - New / One-Time,Unassigned,2360.7999999999997,261,109.0,OVERDUE
+Riverside Grocery,D - Low & Slow,Unassigned,1411.5,198,48.0,OVERDUE
+Grocery Outlet - Altadena,E - New / One-Time,Unassigned,2360.7999999999997,252,105.0,OVERDUE
+Rocky Mountain Supply Ennis,D - Low & Slow,Unassigned,2112.0,192,47.0,OVERDUE
+First Stop Mart #2,E - New / One-Time,Unassigned,2496.0,240,95.0,OVERDUE
+Grocery Outlet - Fontana,E - New / One-Time,Unassigned,2360.7999999999997,249,104.0,OVERDUE
+Grocery Outlet - Happy Valley,E - New / One-Time,Unassigned,2360.7999999999997,248,103.0,OVERDUE
+Grocery Outlet - Highland,E - New / One-Time,Unassigned,2360.7999999999997,249,104.0,OVERDUE
+Fallbrook Major Market,E - New / One-Time,Unassigned,2496.0,238,94.0,OVERDUE
+Bee's Marketplace,E - New / One-Time,Unassigned,2496.0,231,91.0,OVERDUE
+Grocery Outlet - San Ysidro,E - New / One-Time,Unassigned,2360.7999999999997,240,100.0,OVERDUE
+Grocery Outlet - El Cajon,E - New / One-Time,Unassigned,2360.7999999999997,238,99.0,OVERDUE
+Grocery Outlet - Placentia,E - New / One-Time,Unassigned,1441.4499999999998,238,99.0,OVERDUE
+Buy Quick 4,B - Steady Performers,Unassigned,2106.0,177,41.0,OVERDUE
+Best Quality Food Mart,D - Low & Slow,Unassigned,1207.5,133,1.0,OVERDUE
+Grocery Outlet-Tustin,E - New / One-Time,Unassigned,2360.7999999999997,224,93.0,OVERDUE
+Grocery Outlet - Brawley,E - New / One-Time,Unassigned,2360.7999999999997,221,92.0,OVERDUE
+Grocery Outlet - Huntington Beach,E - New / One-Time,Unassigned,2360.7999999999997,221,92.0,OVERDUE
+Fast Stop #1166,B - Steady Performers,Unassigned,2070.0,129,1.0,OVERDUE
+M&W Emmett Chevron,E - New / One-Time,Unassigned,0.0,247,121.0,OVERDUE
+The Cabin/Back Country Safaris,B - Steady Performers,Unassigned,2569.5,175,50.0,OVERDUE
+Food Mart - Raleigh,D - Low & Slow,Unassigned,1410.0,221,97.0,OVERDUE
+Lucky Stop 23,E - New / One-Time,Unassigned,2160.0,203,80.0,OVERDUE
+Grocery Outlet - Wildmar,B - Steady Performers,Unassigned,4812.4,154,35.0,OVERDUE
+My Market At Telluride,B - Steady Performers,Unassigned,3144.0,182,64.0,OVERDUE
+Blue Mountain Express,E - New / One-Time,Unassigned,1920.0,241,123.0,OVERDUE
+Grocery Outlet - Valley Springs,E - New / One-Time,Unassigned,2179.2,214,97.0,OVERDUE
+Grocery Outlet - Burbank,E - New / One-Time,Unassigned,2360.7999999999997,196,82.0,OVERDUE
+Grocery Outlet - King City,E - New / One-Time,Unassigned,1804.6499999999996,195,81.0,OVERDUE
+Grocery Outlet - Tigard,E - New / One-Time,Unassigned,2156.4999999999995,195,81.0,OVERDUE
+Fast Stop #1145,D - Low & Slow,Unassigned,1740.0,193,80.0,OVERDUE
+Cowee Convenience & Deli,E - New / One-Time,Unassigned,2496.0,185,73.0,OVERDUE
+Good2Go #506,E - New / One-Time,Unassigned,3168.0,162,50.0,OVERDUE
+Grocery Outlet - Columbus OH,E - New / One-Time,Unassigned,2366.0,192,80.0,OVERDUE
+Grocery Outlet - Sandy,E - New / One-Time,Unassigned,2270.0,198,86.0,OVERDUE
+Shooting Creek Market,E - New / One-Time,Unassigned,2496.0,185,73.0,OVERDUE
+Grocery Outlet - Parkrose,E - New / One-Time,Unassigned,0.0,195,85.0,OVERDUE
+Grocery Outlet - Idaho Falls,E - New / One-Time,Unassigned,1725.2,254,145.0,OVERDUE
+Grocery Outlet - Independence,B - Steady Performers,Unassigned,2042.9999999999998,115,10.0,OVERDUE
+Zamzows-Fairview,E - New / One-Time,Unassigned,760.5,184,79.0,OVERDUE
+Zamzows-Nampa,E - New / One-Time,Unassigned,1317.0,184,79.0,OVERDUE
+Zamzows-State,E - New / One-Time,Unassigned,2304.0,184,79.0,OVERDUE
+Zamzows-Watertower,E - New / One-Time,Unassigned,823.5,184,79.0,OVERDUE
+Fast Stop #1122,D - Low & Slow,Unassigned,6639.0,129,25.0,OVERDUE
+Good2Go #715,D - Low & Slow,Unassigned,763.5,184,81.0,OVERDUE
+Zamzows - Lake Hazel,E - New / One-Time,Unassigned,2304.0,179,77.0,OVERDUE
+Clearfield Sinclair Operating LLC,E - New / One-Time,Unassigned,552.0,164,65.0,OVERDUE
+Grocery Outlet - Seaside,E - New / One-Time,Unassigned,1725.2,231,132.0,OVERDUE
+Grocery Outlet - Woodland WA,E - New / One-Time,Unassigned,2360.7999999999997,170,71.0,OVERDUE
+Grocery Outlet - Enumclaw WA,B - Steady Performers,Unassigned,4267.6,100,2.0,OVERDUE
+Dakota Mart Gas - Hot Springs #2,D - Low & Slow,Unassigned,1152.0,102,5.0,OVERDUE
+Mr. Gas,B - Steady Performers,Unassigned,4896.0,143,46.0,OVERDUE
+J's Mini Mart,D - Low & Slow,Unassigned,1633.5,177,81.0,OVERDUE
+Parkland On The Run #80143,C - Moderate Movers,Unassigned,2056.5,182,86.0,OVERDUE
+Grocery Outlet - Junction City,C - Moderate Movers,Unassigned,4358.4,149,54.0,OVERDUE
+Work Sports Outdoors #698,E - New / One-Time,Unassigned,2360.7999999999997,162,68.0,OVERDUE
+Grocery Outlet - Rialto,B - Steady Performers,Unassigned,4176.799999999999,144,51.0,OVERDUE
+Zamzows-Franklin,E - New / One-Time,Unassigned,1537.5,163,70.0,OVERDUE
+Grocery Outlet - Eugene,D - Low & Slow,Unassigned,4494.799999999999,133,42.0,OVERDUE
+Good2Go #219,E - New / One-Time,Unassigned,876.0,231,140.0,OVERDUE
+Grocery Outlet - Lynden,B - Steady Performers,Unassigned,4267.599999999999,100,11.0,OVERDUE
+Lynns Dakota Mart - Custer #2 Grocery,E - New / One-Time,Unassigned,2448.0,147,59.0,OVERDUE
+Good2Go #106,E - New / One-Time,Unassigned,811.5,245,158.0,OVERDUE
+Grocery Outlet - Tillamook,B - Steady Performers,Unassigned,4959.949999999999,122,37.0,OVERDUE
+M&W Market Parma,E - New / One-Time,Unassigned,-1131.0,238,153.0,OVERDUE
+Grocery Outlet - Lake Stevens,B - Steady Performers,Unassigned,3654.7,100,16.0,OVERDUE
+Parkland On The Run #80122,B - Steady Performers,Unassigned,5328.0,126,42.0,OVERDUE
+Grocery Outlet - Englewood,E - New / One-Time,Unassigned,2360.7999999999997,144,60.0,OVERDUE
+Grocery Outlet - Visitacion Valley,E - New / One-Time,Unassigned,2360.7999999999997,142,59.0,OVERDUE
+Grocery Outlet Overlea,E - New / One-Time,Unassigned,2360.7999999999997,142,59.0,OVERDUE
+44 Degrees North,D - Low & Slow,Unassigned,4488.0,126,44.0,OVERDUE
+Grocery Outlet - Owing Mills,E - New / One-Time,Unassigned,2360.7999999999997,140,58.0,OVERDUE
+Kwik Stop - Wilmington,D - Low & Slow,Unassigned,-9.0,231,150.0,OVERDUE
+Fast Stop #1133,B - Steady Performers,Unassigned,2592.0,150,70.0,OVERDUE
+Good2Go #517,D - Low & Slow,Unassigned,1728.0,79,2.0,OVERDUE
+Grocery Outlet - Elma,D - Low & Slow,Unassigned,4867.0,123,46.0,OVERDUE
+M&W Harpo's Cascade,D - Low & Slow,Unassigned,1555.5,162,85.0,OVERDUE
+ET's Quick Stop,D - Low & Slow,Unassigned,2802.0,133,57.0,OVERDUE
+Stewarts Ace Hardware -Herriman #346,B - Steady Performers,Unassigned,3334.0,123,47.0,OVERDUE
+Good2Go #422,D - Low & Slow,Unassigned,463.5,182,107.0,OVERDUE
+Grocery Outlet - Auburn WA,C - Moderate Movers,Unassigned,4494.599999999999,128,53.0,OVERDUE
+Hooked On Toys,E - New / One-Time,Unassigned,2360.7999999999997,128,53.0,OVERDUE
+Oliver Lemons - Terrebonne,E - New / One-Time,Unassigned,1344.0,283,208.0,OVERDUE
+Raceway 7016,E - New / One-Time,Unassigned,1344.0,284,209.0,OVERDUE
+Parkland On The Run #80127,E - New / One-Time,Unassigned,1344.0,277,203.0,OVERDUE
+Grocery Outlet - Bellevue Crossroads,E - New / One-Time,Unassigned,2270.0,129,56.0,OVERDUE
+Grocery Outlet - Pendleton,B - Steady Performers,Unassigned,2746.7000000000003,149,77.0,OVERDUE
+Grocery Outlet - Omak,E - New / One-Time,Unassigned,2360.7999999999997,123,51.0,OVERDUE
+Grocery Outlet - Jackson,B - Steady Performers,Unassigned,3632.0,130,59.0,OVERDUE
+Grocery Outlet - North Tacoma,B - Steady Performers,Unassigned,3858.9999999999995,128,57.0,OVERDUE
+Grocery Outlet - Riverside,B - Steady Performers,Unassigned,2814.8,144,73.0,OVERDUE
+Silver Peak Supply,E - New / One-Time,Unassigned,1344.0,266,195.0,OVERDUE
+"Grocery Outlet - Richland, WA",B - Steady Performers,Unassigned,2951.0,126,56.0,OVERDUE
+Grocery Outlet - Yelm,C - Moderate Movers,Unassigned,4608.099999999999,129,59.0,OVERDUE
+Lynns Dakota Mart - Hot Springs,B - Steady Performers,Unassigned,3816.0,105,35.0,OVERDUE
+Grocery Outlet - Jamison PA,E - New / One-Time,Unassigned,2224.6,126,56.0,OVERDUE
+Grocery Outlet - Tulare,E - New / One-Time,Unassigned,2179.2,128,58.0,OVERDUE
+Essential Fuels #2,B - Steady Performers,Unassigned,2352.0,148,79.0,OVERDUE
+Town Pump - Lolo #1 - 1307,D - Low & Slow,Unassigned,3140.0,141,73.0,OVERDUE
+Essential Fuels #3,C - Moderate Movers,Unassigned,564.0,148,81.0,OVERDUE
+Grocery Outlet - Brooklyn OH,D - Low & Slow,Unassigned,2451.6,121,54.0,OVERDUE
+Grocery Outlet - Fullerton,D - Low & Slow,Unassigned,3450.3999999999996,123,57.0,OVERDUE
+Grocery Outlet - Palo Alto,C - Moderate Movers,Unassigned,4176.799999999999,135,69.0,OVERDUE
+Kalispel Market,D - Low & Slow,Unassigned,1932.0,105,39.0,OVERDUE
+Grocery Outlet - MT. Vernon,E - New / One-Time,Unassigned,2360.7999999999997,114,48.0,OVERDUE
+Fast Stop #1139,D - Low & Slow,Unassigned,1352.0,77,12.0,OVERDUE
+Grocery Outlet - National City,C - Moderate Movers,Unassigned,3813.5999999999995,128,64.0,OVERDUE
+Southgate Market,E - New / One-Time,Unassigned,1344.0,241,177.0,OVERDUE
+Ace Hardware-Buhl #457-001,D - Low & Slow,Unassigned,2860.0,144,81.0,OVERDUE
+Poplar Grove,E - New / One-Time,Unassigned,1344.0,238,175.0,OVERDUE
+Castaway Outfitters Company,E - New / One-Time,Unassigned,432.0,231,170.0,OVERDUE
+Grocery Outlet - Cleveland Heights,B - Steady Performers,Unassigned,2451.6,119,59.0,OVERDUE
+Grocery Outlet - Hemet,E - New / One-Time,Unassigned,1271.2,268,208.0,OVERDUE
+Grocery Outlet - Aberdeen,C - Moderate Movers,Unassigned,4313.0,126,67.0,OVERDUE
+Grocery Outlet - Bonners Ferry,D - Low & Slow,Unassigned,2617.4,149,90.0,OVERDUE
+Grocery Outlet - Sonora,B - Steady Performers,Unassigned,3359.6,112,53.0,OVERDUE
+Grocery Outlet - Susanville,E - New / One-Time,Unassigned,1532.25,130,71.0,OVERDUE
+Red Apple Marketplace,E - New / One-Time,Unassigned,1344.0,224,165.0,OVERDUE
+Grocery Outlet - South Pasadena,B - Steady Performers,Unassigned,2724.0,128,70.0,OVERDUE
+Grocery Outlet - Casa De Oro,E - New / One-Time,Unassigned,1271.2,259,201.0,OVERDUE
+Bellas Market,E - New / One-Time,Unassigned,2496.0,94,37.0,OVERDUE
+Good2Go #716,D - Low & Slow,Unassigned,1152.0,184,128.0,OVERDUE
+Grocery Outlet - Redding,E - New / One-Time,Unassigned,1271.2,248,192.0,OVERDUE
+Town Pump - Dillon #2,B - Steady Performers,Unassigned,8664.0,88,33.0,OVERDUE
+Lynns Dakota Mart - Sturgis,D - Low & Slow,Unassigned,2496.0,94,41.0,OVERDUE
+Grocery Outlet - Auburn CA,E - New / One-Time,Unassigned,1271.2,238,185.0,OVERDUE
+Grocery Outlet - Bakersfield,E - New / One-Time,Unassigned,1861.3999999999999,112,59.0,OVERDUE
+Grocery Outlet - Lakewood,E - New / One-Time,Unassigned,1271.2,238,185.0,OVERDUE
+Grocery Outlet - Bermuda Dunes,E - New / One-Time,Unassigned,1271.2,231,179.0,OVERDUE
+Grocery Outlet - Mira Mesa,E - New / One-Time,Unassigned,1271.2,231,179.0,OVERDUE
+Boardman Main St Mini Mart,B - Steady Performers,Unassigned,3384.0,113,62.0,OVERDUE
+Kalispell Market Site 3 Cusik,D - Low & Slow,Unassigned,1776.0,99,48.0,OVERDUE
+Oliver Lemons-Sisters,D - Low & Slow,Unassigned,0.0,52,1.0,OVERDUE
+Starmount BP,D - Low & Slow,Unassigned,780.0,157,106.0,OVERDUE
+Grocery Outlet - Los Banos,E - New / One-Time,Unassigned,1816.0,112,61.0,OVERDUE
+Ace Hardware-Roosevelt,D - Low & Slow,Unassigned,2887.1,119,69.0,OVERDUE
+Riverside Station-West Yellowstone,B - Steady Performers,Unassigned,11916.0,66,16.0,OVERDUE
+Shoshone Shell,B - Steady Performers,Unassigned,3324.0,53,4.0,OVERDUE
+Shoshone Valley Wide Farm Store,B - Steady Performers,Unassigned,3324.0,53,4.0,OVERDUE
+Exxon-Canton NC,E - New / One-Time,Unassigned,1344.0,185,136.0,OVERDUE
+Exxon-Franklin NC,E - New / One-Time,Unassigned,1344.0,185,136.0,OVERDUE
+Grocery Outlet - Ferndale,E - New / One-Time,Unassigned,2270.0,86,37.0,OVERDUE
+Quick Pantry 102,E - New / One-Time,Unassigned,1344.0,185,136.0,OVERDUE
+Fast Stop #2241,D - Low & Slow,Unassigned,1234.5,95,47.0,OVERDUE
+Grocery Outlet - Lakeside,C - Moderate Movers,Unassigned,1089.6,130,82.0,OVERDUE
+Grocery Outlet - Yakima,B - Steady Performers,Unassigned,3359.5999999999995,74,26.0,OVERDUE
+Valley Country Store Preston,B - Steady Performers,Unassigned,1440.0,63,15.0,OVERDUE
+Grocery Outlet - Yucca Valley,E - New / One-Time,Unassigned,1271.2,212,164.0,OVERDUE
+Kalispell #1,D - Low & Slow,Unassigned,3562.0,84,37.0,OVERDUE
+Good2Go #212,E - New / One-Time,Unassigned,1008.0,226,179.0,OVERDUE
+Good2Go #808,E - New / One-Time,Unassigned,864.0,178,131.0,OVERDUE
+Grocery Outlet - North Division,D - Low & Slow,Unassigned,3106.3,119,73.0,OVERDUE
+Town Pump - Bozeman #8 - 0317-1095,D - Low & Slow,Unassigned,1188.0,67,21.0,OVERDUE
+KJ's #80229,B - Steady Performers,Unassigned,7068.0,81,36.0,OVERDUE
+Grocery Outlet - San Luis Obispo,E - New / One-Time,Unassigned,2270.0,80,35.0,OVERDUE
+Town Pump - Belgrade #3 - 1016,D - Low & Slow,Unassigned,1008.0,214,170.0,OVERDUE
+Quick Pantry 100,E - New / One-Time,Unassigned,1344.0,165,121.0,OVERDUE
+Grocery Outlet - Lorain,E - New / One-Time,Unassigned,2360.7999999999997,72,30.0,OVERDUE
+Grocery Outlet - Orland,E - New / One-Time,Unassigned,851.2499999999999,261,219.0,OVERDUE
+Brookshire Brothers - Onalaska,E - New / One-Time,Unassigned,2016.0,80,39.0,OVERDUE
+Grocery Outlet - Cameron Park,E - New / One-Time,Unassigned,1180.3999999999999,252,211.0,OVERDUE
+Grocery Outlet - Silverdale,E - New / One-Time,Unassigned,1316.6,127,86.0,OVERDUE
+"Grocery Outlet - Dallas, OR",D - Low & Slow,Unassigned,3155.2999999999997,94,54.0,OVERDUE
+Stokes Market - Anaconda,B - Steady Performers,Unassigned,4512.0,93,53.0,OVERDUE
+Good2Go #309,E - New / One-Time,Unassigned,1248.0,192,152.0,OVERDUE
+Grocery Outlet - Anderson,E - New / One-Time,Unassigned,-828.55,248,208.0,OVERDUE
+Valley Wide Country Store Zillah,E - New / One-Time,Unassigned,2208.0,72,32.0,OVERDUE
+Yanceyville Mart,E - New / One-Time,Unassigned,891.0,190,150.0,OVERDUE
+Fast Stop #1159,D - Low & Slow,Unassigned,708.0,85,46.0,OVERDUE
+Market At Ridgeway,E - New / One-Time,Unassigned,1248.0,183,145.0,OVERDUE
+Good2Go #503,B - Steady Performers,Unassigned,1992.0,80,43.0,OVERDUE
+Town Pump Whitehall #1,D - Low & Slow,Unassigned,3804.0,79,42.0,OVERDUE
+Fast Stop #2249,D - Low & Slow,Unassigned,1752.0,126,90.0,OVERDUE
+Quick Track #93,D - Low & Slow,Unassigned,3528.0,74,38.0,OVERDUE
+Fast Stop #1101,D - Low & Slow,Unassigned,972.0,119,84.0,OVERDUE
+Grocery Outlet - El Centro,C - Moderate Movers,Unassigned,2814.7999999999997,116,81.0,OVERDUE
+Grocery Outlet - Victorville,D - Low & Slow,Unassigned,2088.4,121,86.0,OVERDUE
+Harvest Foods - Orofino,D - Low & Slow,Unassigned,2443.5,101,66.0,OVERDUE
+Market At Nederland,D - Low & Slow,Unassigned,3072.0,79,44.0,OVERDUE
+Parkland On The Run #80132,D - Low & Slow,Unassigned,1248.0,183,149.0,OVERDUE
+Coffee Cup Fuel Stop - Vivian,D - Low & Slow,Unassigned,3576.0,65,32.0,OVERDUE
+Fast Stop #1112,D - Low & Slow,Unassigned,1332.0,123,90.0,OVERDUE
+RALLYSTOP 12 - NEW HARMONY,B - Steady Performers,Unassigned,4926.0,79,46.0,OVERDUE
+Good2Go #504,B - Steady Performers,Unassigned,4800.0,79,47.0,OVERDUE
+Grocery Outlet - Blue Jay,C - Moderate Movers,Unassigned,3495.7999999999997,100,68.0,OVERDUE
+Town Pump - Rocker Flying J - 4710-1357,B - Steady Performers,Unassigned,7587.0,63,31.0,OVERDUE
+Town Pump - Sidney #3 - 8310-1369,B - Steady Performers,Unassigned,4008.0,88,56.0,OVERDUE
+Town Pump - Whitefish #2 - 1398,B - Steady Performers,Unassigned,4928.0,88,57.0,OVERDUE
+Town Pump - Woodside #1 - 0920-1409,B - Steady Performers,Unassigned,3396.0,88,57.0,OVERDUE
+Traders,B - Steady Performers,Unassigned,3324.0,39,8.0,OVERDUE
+Grocery Outlet - NW Fresno,E - New / One-Time,Unassigned,1271.2,140,109.0,OVERDUE
+McKays Bandon,E - New / One-Time,Unassigned,2496.0,52,21.0,OVERDUE
+Star Travel Plaza - Harrier,E - New / One-Time,Unassigned,2496.0,51,20.0,OVERDUE
+Star Travel Plaza - Reserve,E - New / One-Time,Unassigned,2496.0,51,20.0,OVERDUE
+Good2Go #310,D - Low & Slow,Unassigned,1536.0,112,82.0,OVERDUE
+Walker Drug & General Store #806,D - Low & Slow,Unassigned,635.5999999999999,122,92.0,OVERDUE
+Travelers Rest Country Store,E - New / One-Time,Unassigned,2400.0,51,21.0,OVERDUE
+Farmers Supply Co-Op-Ontario,B - Steady Performers,Unassigned,1952.5,94,65.0,OVERDUE
+KB Express Parowan #80167,B - Steady Performers,Unassigned,4896.0,79,50.0,OVERDUE
+Town Pump - Butte #4 - 0914-1119,B - Steady Performers,Unassigned,8664.0,59,30.0,OVERDUE
+Allied Gardens,C - Moderate Movers,Unassigned,2723.9999999999995,116,88.0,OVERDUE
+Idaho Falls Sinclair Operating LLC,B - Steady Performers,Unassigned,4056.0,63,36.0,OVERDUE
+Town Pump - Great Falls #7 - 7033-1227,D - Low & Slow,Unassigned,1788.0,88,61.0,OVERDUE
+River Mart,E - New / One-Time,Unassigned,1296.0,114,87.0,OVERDUE
+Fast Stop #1155,D - Low & Slow,Unassigned,938.0,85,59.0,OVERDUE
+Grocery Outlet - Puyallup,B - Steady Performers,Unassigned,4698.9,78,52.0,OVERDUE
+Town Pump - Belgrade #4 - 5104-1019,D - Low & Slow,Unassigned,3648.0,88,62.0,OVERDUE
+Town Pump - Rocker #1 - 5600-1354 *058,B - Steady Performers,Unassigned,6792.0,65,39.0,OVERDUE
+Town Pump Butte #2,D - Low & Slow,Unassigned,3781.5,87,61.0,OVERDUE
+Good2Go #566,D - Low & Slow,Unassigned,2748.0,81,56.0,OVERDUE
+Good2Go #712,D - Low & Slow,Unassigned,3576.0,87,62.0,OVERDUE
+Grocery Outlet - French Valley,B - Steady Performers,Unassigned,6537.599999999999,65,40.0,OVERDUE
+Grocery Outlet - Moses Lake,D - Low & Slow,Unassigned,2542.3999999999996,80,55.0,OVERDUE
+The Dalles 6th Street Dino Mart,D - Low & Slow,Unassigned,3000.0,116,91.0,OVERDUE
+Town Pump - Bozeman #10 - 5402-1098,D - Low & Slow,Unassigned,5106.0,65,41.0,OVERDUE
+Fast Stop #1118,E - New / One-Time,Unassigned,1344.0,92,68.0,OVERDUE
+Fast Stop #1119,E - New / One-Time,Unassigned,1344.0,92,68.0,OVERDUE
+Grocery Outlet - Westminster,E - New / One-Time,Unassigned,2360.7999999999997,42,18.0,OVERDUE
+Town Pump - Red Lodge #1 - 1720-1350,D - Low & Slow,Unassigned,3576.0,88,66.0,OVERDUE
+Farm & Home Supply WW#375,E - New / One-Time,Unassigned,1271.2,93,72.0,OVERDUE
+Puff City,E - New / One-Time,Unassigned,1128.0,165,144.0,OVERDUE
+Town Pump - Polson #1 - 3610-1347,B - Steady Performers,Unassigned,5740.0,63,43.0,OVERDUE
+Dakota Mart Gas - Custer,B - Steady Performers,Unassigned,4380.0,65,46.0,OVERDUE
+Fast Stop #1136,D - Low & Slow,Unassigned,576.0,126,108.0,OVERDUE
+Good 2 Go #713,B - Steady Performers,Unassigned,4320.0,74,56.0,OVERDUE
+Good2Go #704,D - Low & Slow,Unassigned,639.0,119,101.0,OVERDUE
+Grocery Outlet - Grants Pass,B - Steady Performers,Unassigned,5493.4,51,33.0,OVERDUE
+Town Pump - Missoula #9 - 4130-1334,B - Steady Performers,Unassigned,3764.0,79,61.0,OVERDUE
+Grocery Outlet - Ashland,E - New / One-Time,Unassigned,2338.1,31,13.0,OVERDUE
+Grocery Outlet - Kennewick,E - New / One-Time,Unassigned,2338.1,31,13.0,OVERDUE
+Valley Wide Coop. Sunny Side,E - New / One-Time,Unassigned,1296.0,74,56.0,OVERDUE
+Fast Stop #1116,D - Low & Slow,Unassigned,2838.0,88,71.0,OVERDUE
+Valley Country Store Crossroads,B - Steady Performers,Unassigned,6933.0,57,40.0,OVERDUE
+Good2Go #110,E - New / One-Time,Unassigned,1056.0,245,228.0,OVERDUE
+Valley Country Store Parma,B - Steady Performers,Unassigned,6540.0,58,42.0,OVERDUE
+Good2Go # 501,E - New / One-Time,Unassigned,648.0,78,62.0,OVERDUE
+Good 2 Go #314,B - Steady Performers,Unassigned,3432.0,74,59.0,OVERDUE
+Kellys Convenience Center,C - Moderate Movers,Unassigned,2928.0,133,118.0,OVERDUE
+Quick Track #85,D - Low & Slow,Unassigned,2064.0,74,59.0,OVERDUE
+RALLYSTOP 5 - CEDAR SHELL,B - Steady Performers,Unassigned,3552.0,88,73.0,OVERDUE
+Town Pump - Billings #4 - 0117-1044,B - Steady Performers,Unassigned,4812.0,65,50.0,OVERDUE
+Grocery Outlet - Hermiston,E - New / One-Time,Unassigned,896.6500000000001,67,52.0,OVERDUE
+Good2Go #213,C - Moderate Movers,Unassigned,2784.0,102,88.0,OVERDUE
+Grocery Outlet - Cave Junction,B - Steady Performers,Unassigned,4948.599999999999,52,39.0,OVERDUE
+Town Pump - Billings #12 - 8002-1056,B - Steady Performers,Unassigned,3324.0,65,52.0,OVERDUE
+Town Pump Belgrade #1,B - Steady Performers,Unassigned,2700.0,88,75.0,OVERDUE
+BJ's Mini Mart,E - New / One-Time,Unassigned,468.0,193,180.0,OVERDUE
+Fast Stop #1147,E - New / One-Time,Unassigned,1056.0,193,180.0,OVERDUE
+Chevron Harts (Store #80234),D - Low & Slow,Unassigned,1881.0,88,76.0,OVERDUE
+Town Pump - Kalispell #7 - 2310-1280,D - Low & Slow,Unassigned,2592.0,65,53.0,OVERDUE
+Valley Country Store Bellevue,B - Steady Performers,Unassigned,5052.0,57,45.0,OVERDUE
+KB Express #80169,E - New / One-Time,Unassigned,1152.0,86,74.0,OVERDUE
+Grocery Outlet - Pocatello,B - Steady Performers,Unassigned,1781.9499999999998,58,47.0,OVERDUE
+Town Pump - Columbia Falls #2 - 8910,B - Steady Performers,Unassigned,5532.0,63,52.0,OVERDUE
+Town Pump - Columbus #1 - 5100-1151,B - Steady Performers,Unassigned,3726.0,88,77.0,OVERDUE
+Corner Cenex,B - Steady Performers,Unassigned,5520.0,66,56.0,OVERDUE
+Good2Go #105,D - Low & Slow,Unassigned,2248.5,87,77.0,OVERDUE
+Good2Go #507,D - Low & Slow,Unassigned,2952.0,80,70.0,OVERDUE
+Grocery Outlet - Lake Forest,C - Moderate Movers,Unassigned,2724.0,100,90.0,OVERDUE
+Grocery Outlet - Medford,C - Moderate Movers,Unassigned,4540.0,65,55.0,OVERDUE
+Grocery Outlet - Spokane Valley,D - Low & Slow,Unassigned,5759.5,58,48.0,OVERDUE
+Grocery Outlet - Brookings,B - Steady Performers,Unassigned,6583.0,44,35.0,OVERDUE
+Grocery Outlet - Lancaster,B - Steady Performers,Unassigned,3722.7999999999997,45,36.0,OVERDUE
+Town And Country Supply- Frontage Rd,D - Low & Slow,Unassigned,2710.5,88,79.0,OVERDUE
+Grocery Outlet - Murrieta,B - Steady Performers,Unassigned,5357.2,58,50.0,OVERDUE
+Parkland On The Run #80159,B - Steady Performers,Unassigned,3037.5,87,79.0,OVERDUE
+Valley Country Store Rupert,B - Steady Performers,Unassigned,3009.0,58,50.0,OVERDUE
+Fast Stop #1132,D - Low & Slow,Unassigned,1824.0,84,77.0,OVERDUE
+Nampa Grocery Outlet,C - Moderate Movers,Unassigned,2010.8999999999999,95,88.0,OVERDUE
+Parkland #80231,D - Low & Slow,Unassigned,3840.0,84,77.0,OVERDUE
+Good2Go #717,D - Low & Slow,Unassigned,1536.0,130,124.0,OVERDUE
+The Market At Cripple Creek,D - Low & Slow,Unassigned,3726.0,73,67.0,OVERDUE
+Town Pump - Livingston #3 - 0610-1303,B - Steady Performers,Unassigned,4356.0,73,67.0,OVERDUE
+Thriftway Super Stop,E - New / One-Time,Unassigned,2496.0,18,12.0,OVERDUE
+Dakota Mart Gas - Lead,E - New / One-Time,Unassigned,1056.0,81,76.0,OVERDUE
+Good2Go #514,E - New / One-Time,Unassigned,1056.0,78,73.0,OVERDUE
+Good2Go #313,D - Low & Slow,Unassigned,3048.0,74,70.0,OVERDUE
+Grocery Outlet - Oceanside Misson,C - Moderate Movers,Unassigned,5180.4,72,68.0,OVERDUE
+On the Run #80254,B - Steady Performers,Unassigned,8400.0,32,28.0,OVERDUE
+Grocery Outlet - Ephrata,D - Low & Slow,Unassigned,3132.6,74,71.0,OVERDUE
+Mike's Market-Garden City,B - Steady Performers,Unassigned,23854.5,15,12.0,OVERDUE
+Grocery Outlet - Chico,E - New / One-Time,Unassigned,998.8,262,259.0,OVERDUE
+Valley Wide Country Store Shoshone,B - Steady Performers,Unassigned,4068.0,63,61.0,OVERDUE
+Watsons Market,C - Moderate Movers,Unassigned,2904.0,121,119.0,OVERDUE
+Grocery Outlet - Blythe,E - New / One-Time,Unassigned,2360.7999999999997,15,13.0,OVERDUE
+RALLYSTOP 3 - PROVIDENCE CHEVRON,D - Low & Slow,Unassigned,2964.0,88,87.0,OVERDUE
+Town Pump - Big Timber #2 - 6300-1033,B - Steady Performers,Unassigned,8928.0,29,28.0,OVERDUE
+Town Pump - Thompson Falls #1 - 1377,B - Steady Performers,Unassigned,4381.5,67,66.0,OVERDUE
+Town Pump Butte #8,B - Steady Performers,Unassigned,3180.0,65,64.0,OVERDUE
+Broulim's Soda Springs,D - Low & Slow,Unassigned,2220.0,63,63.0,OVERDUE
+Fast Stop #1111,D - Low & Slow,Unassigned,1116.0,123,123.0,OVERDUE
+Fast Stop #1115,C - Moderate Movers,Unassigned,3072.0,88,89.0,Urgent (< 2 weeks)
+Good2Go #330,B - Steady Performers,Unassigned,2160.0,74,75.0,Urgent (< 2 weeks)
+Grocery Outlet - Colville,D - Low & Slow,Unassigned,2587.8,59,60.0,Urgent (< 2 weeks)
+Grocery Outlet - E Wenatchee,B - Steady Performers,Unassigned,4358.4,25,26.0,Urgent (< 2 weeks)
+Grocery Outlet - Rainier,B - Steady Performers,Unassigned,5266.4,49,50.0,Urgent (< 2 weeks)
+Broulim's Montpelier,D - Low & Slow,Unassigned,3889.5,66,68.0,Urgent (< 2 weeks)
+Fast Gas #1,D - Low & Slow,Unassigned,2856.0,81,83.0,Urgent (< 2 weeks)
+Grocery Outlet - Hazeldell,B - Steady Performers,Unassigned,4222.2,64,66.0,Urgent (< 2 weeks)
+Grocery Outlet - Newberg,B - Steady Performers,Unassigned,3495.7999999999997,49,51.0,Urgent (< 2 weeks)
+Town Pump - Bozeman #1 - 1080,D - Low & Slow,Unassigned,3348.0,67,69.0,Urgent (< 2 weeks)
+Good2Go #423,E - New / One-Time,Unassigned,960.0,88,90.0,Urgent (< 2 weeks)
+Good2Go #508,E - New / One-Time,Unassigned,792.0,80,82.0,Urgent (< 2 weeks)
+Parkland Silver Eagle #80187,E - New / One-Time,Unassigned,-504.0,80,82.0,Urgent (< 2 weeks)
+Broulim’s #23,D - Low & Slow,Unassigned,3684.0,50,53.0,Urgent (< 2 weeks)
+Grocery Outlet - Hailey,B - Steady Performers,Unassigned,4981.5,45,48.0,Urgent (< 2 weeks)
+Grocery Outlet - Mountain Home,D - Low & Slow,Unassigned,1657.0999999999997,95,98.0,Urgent (< 2 weeks)
+Mike's Market Lava,B - Steady Performers,Unassigned,11028.0,24,27.0,Urgent (< 2 weeks)
+Town Pump Superior #1374,C - Moderate Movers,Unassigned,1485.0,108,111.0,Urgent (< 2 weeks)
+Quick Track #84,E - New / One-Time,Unassigned,960.0,136,139.0,Urgent (< 2 weeks)
+Quick Track #89,E - New / One-Time,Unassigned,960.0,136,139.0,Urgent (< 2 weeks)
+Quick Track #91,E - New / One-Time,Unassigned,960.0,136,139.0,Urgent (< 2 weeks)
+Quick Track #92,E - New / One-Time,Unassigned,960.0,136,139.0,Urgent (< 2 weeks)
+Grocery Outlet - Emmett,C - Moderate Movers,Unassigned,2709.7,87,91.0,Urgent (< 2 weeks)
+Town Pump (Employee Orders),A - High Velocity,Unassigned,15726.0,0,4.0,Urgent (< 2 weeks)
+Town Pump - Kalispell #5 - 0159-1277,B - Steady Performers,Unassigned,4500.0,65,69.0,Urgent (< 2 weeks)
+Grocery Outlet - South Chico,E - New / One-Time,Unassigned,2360.7999999999997,9,13.0,Urgent (< 2 weeks)
+Joyco,E - New / One-Time,Unassigned,960.0,142,146.0,Urgent (< 2 weeks)
+Good2Go #366,E - New / One-Time,Unassigned,960.0,219,224.0,Urgent (< 2 weeks)
+Grocery Outlet Long Beach,E - New / One-Time,Unassigned,1271.2,18,23.0,Urgent (< 2 weeks)
+M&W Franklin Junction,D - Low & Slow,Unassigned,2644.5,45,51.0,Urgent (< 2 weeks)
+Town Pump - Troy #1 - 1389,D - Low & Slow,Unassigned,3457.5,65,71.0,Urgent (< 2 weeks)
+Fast Stop #1135,D - Low & Slow,Unassigned,2544.0,84,91.0,Urgent (< 2 weeks)
+Grocery Outlet - Paradise,B - Steady Performers,Unassigned,4540.0,50,57.0,Urgent (< 2 weeks)
+KJ's #80216,B - Steady Performers,Unassigned,3387.0,65,72.0,Urgent (< 2 weeks)
+Lee's Marketplace-Heber,D - Low & Slow,Unassigned,3390.0,66,73.0,Urgent (< 2 weeks)
+Rocky Mountain Supply Townsend,B - Steady Performers,Unassigned,4284.0,65,72.0,Urgent (< 2 weeks)
+Town Pump - Bozeman #7 - 7002-1092,D - Low & Slow,Unassigned,3864.0,67,74.0,Urgent (< 2 weeks)
+Fast Stop #1137,D - Low & Slow,Unassigned,3115.5,66,74.0,Urgent (< 2 weeks)
+Grocery Outlet - Molalla,B - Steady Performers,Unassigned,4471.9,49,57.0,Urgent (< 2 weeks)
+Grocery Outlet - Prosser,D - Low & Slow,Unassigned,2315.4,108,116.0,Urgent (< 2 weeks)
+Kellys Hitching Post,D - Low & Slow,Unassigned,7644.0,31,39.0,Urgent (< 2 weeks)
+Parkland Exxon Casey's #80208,B - Steady Performers,Unassigned,4464.0,57,65.0,Urgent (< 2 weeks)
+Town Pump - Townsend #1 - 1385,D - Low & Slow,Unassigned,2844.0,88,96.0,Urgent (< 2 weeks)
+7 Star Convenience Dallas OR,E - New / One-Time,Unassigned,828.0,45,53.0,Urgent (< 2 weeks)
+7 Star Convenience Independence OR,E - New / One-Time,Unassigned,828.0,45,53.0,Urgent (< 2 weeks)
+Grocery Outlet - La Mirada,E - New / One-Time,Unassigned,1271.2,15,23.0,Urgent (< 2 weeks)
+Grocery Outlet - Escondido,C - Moderate Movers,Unassigned,4517.299999999999,72,81.0,Urgent (< 2 weeks)
+Town Pump - Bozeman #2,D - Low & Slow,Unassigned,1614.0,59,68.0,Urgent (< 2 weeks)
+Valley Country Store Rexburg,D - Low & Slow,Unassigned,3312.0,58,67.0,Urgent (< 2 weeks)
+Broulim's Alpine Store,B - Steady Performers,Unassigned,11040.0,17,27.0,Urgent (< 2 weeks)
+Eagle Feather Trading Post #2,B - Steady Performers,Unassigned,2496.0,51,61.0,Urgent (< 2 weeks)
+Ace/Ridleys Winnemucca,E - New / One-Time,Unassigned,2360.7999999999997,3,13.0,Urgent (< 2 weeks)
+Fast Stop #1146,E - New / One-Time,Unassigned,324.0,95,105.0,Urgent (< 2 weeks)
+Good2Go #307,E - New / One-Time,Unassigned,660.0,74,84.0,Urgent (< 2 weeks)
+Grocery Outlet - Winnemucca,E - New / One-Time,Unassigned,2360.7999999999997,3,13.0,Urgent (< 2 weeks)
+Gas N Shop #3,D - Low & Slow,Unassigned,1284.0,79,90.0,Urgent (< 2 weeks)
+Grocery Outlet - Veneta,C - Moderate Movers,Unassigned,3268.7999999999997,65,76.0,Urgent (< 2 weeks)
+Lynns Dakota Mart - Summerset,D - Low & Slow,Unassigned,766.5,81,92.0,Urgent (< 2 weeks)
+RALLYSTOP 16 - RALLYSTOP MARKET,D - Low & Slow,Unassigned,2976.0,73,84.0,Urgent (< 2 weeks)
+Sage Travel Plaza,D - Low & Slow,Unassigned,2451.0,81,92.0,Urgent (< 2 weeks)
+Town And Country Supply-E. Laurel,C - Moderate Movers,Unassigned,1968.0,119,130.0,Urgent (< 2 weeks)
+Town Pump - Anaconda #1 - 0100-1001,D - Low & Slow,Unassigned,3732.0,65,76.0,Urgent (< 2 weeks)
+Brookshire Brothers - Livingston,E - New / One-Time,Unassigned,864.0,80,91.0,Urgent (< 2 weeks)
+Grocery Outlet - Yuba City,E - New / One-Time,Unassigned,2360.7999999999997,2,13.0,Urgent (< 2 weeks)
+Good 2 Go #714,D - Low & Slow,Unassigned,1260.0,130,142.0,Urgent (< 2 weeks)
+Grocery Outlet - Longview,B - Steady Performers,Unassigned,2462.95,57,69.0,Urgent (< 2 weeks)
+Fast Stop #1151,E - New / One-Time,Unassigned,648.0,149,161.0,Urgent (< 2 weeks)
+Pyramid Lake Marina,E - New / One-Time,Unassigned,2496.0,0,12.0,Urgent (< 2 weeks)
+RALLYSTOP 6 - EXPRESS MART SHELL,E - New / One-Time,Unassigned,864.0,86,98.0,Urgent (< 2 weeks)
+Good2Go Parent Company::Good 2 Go #711,D - Low & Slow,Unassigned,1824.0,74,87.0,Urgent (< 2 weeks)
+Valley Wide Country Store American Falls,D - Low & Slow,Unassigned,2699.5,58,71.0,Urgent (< 2 weeks)
+Good2Go #707,D - Low & Slow,Unassigned,24.0,119,133.0,Urgent (< 2 weeks)
+Town Pump - Plains #1 - 3500-1340,B - Steady Performers,Unassigned,6954.0,29,43.0,Urgent (< 2 weeks)
+Good2Go #701,D - Low & Slow,Unassigned,169.5,92,107.0,Soon (2-4 weeks)
+Town Pump - Missoula #1- 0704-1319,D - Low & Slow,Unassigned,2748.0,79,94.0,Soon (2-4 weeks)
+Quick Track #88,D - Low & Slow,Unassigned,1248.0,77,93.0,Soon (2-4 weeks)
+Town Pump - Miles City #1 - 8300-1315,D - Low & Slow,Unassigned,2244.0,79,95.0,Soon (2-4 weeks)
+Grocery Outlet - Airway Heights,D - Low & Slow,Unassigned,1370.2,105,122.0,Soon (2-4 weeks)
+Grocery Outlet - The Dalles,C - Moderate Movers,Unassigned,4630.799999999999,49,66.0,Soon (2-4 weeks)
+Grocery Outlet - Twentynine Palms,C - Moderate Movers,Unassigned,3541.2,65,82.0,Soon (2-4 weeks)
+Town Pump - Glendive - 8320-1205,B - Steady Performers,Unassigned,11692.0,8,25.0,Soon (2-4 weeks)
+Town Pump Bozeman #9 - 1096,B - Steady Performers,Unassigned,6454.0,16,33.0,Soon (2-4 weeks)
+Grocery Outlet - Madras,B - Steady Performers,Unassigned,3927.1,53,71.0,Soon (2-4 weeks)
+Grocery Outlet - Oregon City,B - Steady Performers,Unassigned,6242.5,31,49.0,Soon (2-4 weeks)
+Grocery Outlet - Yreka,D - Low & Slow,Unassigned,4726.4,46,64.0,Soon (2-4 weeks)
+Parkland-Mr. Gas Burley #12-#80250,B - Steady Performers,Unassigned,1921.5,56,74.0,Soon (2-4 weeks)
+Town Pump - Billings #13 - 1057,D - Low & Slow,Unassigned,3268.0,52,70.0,Soon (2-4 weeks)
+Fast Stop #1149,D - Low & Slow,Unassigned,96.0,193,213.0,Soon (2-4 weeks)
+Grocery Outlet - Cheney,E - New / One-Time,Unassigned,908.0,212,232.0,Soon (2-4 weeks)
+Grocery Outlet - Redondo Beach,B - Steady Performers,Unassigned,3359.6,45,66.0,Soon (2-4 weeks)
+Town Pump - Belgrade #2 - 0107-1013,D - Low & Slow,Unassigned,2376.0,65,86.0,Soon (2-4 weeks)
+Town Pump - Livingston #2 - 7600-1300,D - Low & Slow,Unassigned,3240.0,52,73.0,Soon (2-4 weeks)
+Valley Wide - Meridian,D - Low & Slow,Unassigned,4020.0,59,80.0,Soon (2-4 weeks)
+Grocery Outlet - Fallbrook,C - Moderate Movers,Unassigned,3813.5999999999995,65,87.0,Soon (2-4 weeks)
+Town Pump - Bonner #1 - 8500-1070,B - Steady Performers,Unassigned,10884.0,8,30.0,Soon (2-4 weeks)
+Town Pump - Boulder #1 - 1075,B - Steady Performers,Unassigned,9655.5,8,30.0,Soon (2-4 weeks)
+Zamzows-Federal Way,B - Steady Performers,Unassigned,3636.0,35,57.0,Soon (2-4 weeks)
+Fast Stop Express,E - New / One-Time,Unassigned,768.0,80,102.0,Soon (2-4 weeks)
+Good2Go #515,E - New / One-Time,Unassigned,168.0,80,102.0,Soon (2-4 weeks)
+I80 Smokeshop,E - New / One-Time,Unassigned,1344.0,0,22.0,Soon (2-4 weeks)
+Nixon Store,E - New / One-Time,Unassigned,1344.0,0,22.0,Soon (2-4 weeks)
+Grocery Outlet - McMinnville,B - Steady Performers,Unassigned,4426.499999999999,49,72.0,Soon (2-4 weeks)
+Grocery Outlet - Petaluma,B - Steady Performers,Unassigned,3722.7999999999997,32,55.0,Soon (2-4 weeks)
+Valley Wide Country Store Wendell,C - Moderate Movers,Unassigned,3922.5,53,77.0,Soon (2-4 weeks)
+Fast Stop #1129,D - Low & Slow,Unassigned,2820.0,73,98.0,Soon (2-4 weeks)
+Town Pump - MSLA #7 FLYING J - 8202-1328,B - Steady Performers,Unassigned,9422.0,8,33.0,Soon (2-4 weeks)
+Grocery Outlet - Crescent City,B - Steady Performers,Unassigned,3949.7999999999993,45,71.0,Soon (2-4 weeks)
+Grocery Outlet - Norco,D - Low & Slow,Unassigned,2633.2,65,91.0,Soon (2-4 weeks)
+Grocery Outlet - Ten Mile,D - Low & Slow,Unassigned,3551.35,38,64.0,Soon (2-4 weeks)
+Caldwell Grocery Outlet,B - Steady Performers,Unassigned,4142.75,29,56.0,Soon (2-4 weeks)
+Good2Go #702,D - Low & Slow,Unassigned,252.0,119,146.0,Soon (2-4 weeks)
+Town Pump - Bozeman #6 - 2215 - 1089,D - Low & Slow,Unassigned,2280.0,67,94.0,Soon (2-4 weeks)
+Town Pump - Helena #8,D - Low & Slow,Unassigned,2160.0,88,115.0,Soon (2-4 weeks)
+Grocery Outlet - Corning,E - New / One-Time,Unassigned,817.1999999999999,9,36.0,Soon (2-4 weeks)
+Ace Hardware/Ridleys-Pinedale #456-000,B - Steady Performers,Unassigned,7562.8,17,45.0,Soon (2-4 weeks)
+Kellys Sunset Convenience Store,D - Low & Slow,Unassigned,5412.0,31,59.0,Soon (2-4 weeks)
+RALLYSTOP 7 - SPRINGDALE SHELL,D - Low & Slow,Unassigned,963.0,72,100.0,Soon (2-4 weeks)
+Town Pump - Bozeman #5 - 1915-1086,B - Steady Performers,Unassigned,6096.0,15,43.0,Soon (2-4 weeks)
+Fast Stop #2248,E - New / One-Time,Unassigned,300.0,203,231.0,Soon (2-4 weeks)
+Fast Stop #1102,B - Steady Performers,Unassigned,7260.0,15,44.0,Soon (2-4 weeks)
+Fast Stop #1143,D - Low & Slow,Unassigned,1543.5,88,117.0,Soon (2-4 weeks)
+Grocery Outlet - Eagle RD Meridian,D - Low & Slow,Unassigned,2894.249999999999,38,67.0,Soon (2-4 weeks)
+RallyStop #15,D - Low & Slow,Unassigned,2688.0,73,102.0,Soon (2-4 weeks)
+Valley Wide - Nampa,B - Steady Performers,Unassigned,6072.0,9,38.0,Soon (2-4 weeks)
+Broulim's Afton,E - New / One-Time,Unassigned,864.0,214,243.0,Soon (2-4 weeks)
+Grocery Outlet - West Yakima,B - Steady Performers,Unassigned,4176.799999999999,25,55.0,Soon (2-4 weeks)
+Rocky Mountain Supply Belgrade,D - Low & Slow,Unassigned,2076.0,67,97.0,Soon (2-4 weeks)
+Town Pump-Parent Company:,B - Steady Performers,VIEGEAR,5581.0,59,6.0,OVERDUE
+Templeton Feed and Grain,A - High Velocity,VIEGEAR,22508.0,53,1.0,OVERDUE
+Fairbank Equipment,E - New / One-Time,VIEGEAR,4896.0,53,11.0,OVERDUE
+Giovanni's Fish Market,B - Steady Performers,VIEGEAR,5301.0,45,10.0,OVERDUE
+ICT,E - New / One-Time,VIEGEAR,1584.0,84,52.0,OVERDUE
+Avimor,B - Steady Performers,VIEGEAR,2011.4299999999998,42,12.0,OVERDUE
+Tuls Dairies,E - New / One-Time,VIEGEAR,4500.0,39,9.0,OVERDUE
+Valley Wide Coop,E - New / One-Time,VIEGEAR,1400.0,84,59.0,OVERDUE
+HSB Ambulance,D - Low & Slow,VIEGEAR,750.0,42,24.0,OVERDUE
+Galvanize,E - New / One-Time,VIEGEAR,1575.0,14,19.0,Urgent (< 2 weeks)
+Awalix LLC,E - New / One-Time,VIEGEAR,2047.0,7,14.0,Urgent (< 2 weeks)
+Stickney Hill Dairy,E - New / One-Time,VIEGEAR,864.0,59,67.0,Urgent (< 2 weeks)
+Timber Ridge Transport,E - New / One-Time,VIEGEAR,750.0,56,74.0,Soon (2-4 weeks)
+HSB Fire Department,E - New / One-Time,VIEGEAR,555.0,23,53.0,Soon (2-4 weeks)
